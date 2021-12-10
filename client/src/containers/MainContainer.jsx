@@ -9,7 +9,7 @@ const MainContainer = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       const postList = await getAllPosts();
-      setFoods(postList);
+      setPosts(postList);
     };
     fetchPosts;
   }, []);
