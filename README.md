@@ -72,9 +72,7 @@ _**Maison des Plantes** is a blog-style application for any and all plant lovers
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
-
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
+![Screen Shot 2021-12-10 at 9 21 13 AM](https://user-images.githubusercontent.com/91746116/145588540-db3f01c5-f98e-4f8c-8ba0-1e9c81adf018.png)
 
 #### Component Architecture
 
@@ -130,9 +128,8 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+![Screen Shot 2021-12-10 at 9 17 49 AM](https://user-images.githubusercontent.com/91746116/145588037-5f3fa90e-d088-4ffa-8381-0823696f1621.png)
 
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
 <br>
 
 ***
