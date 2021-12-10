@@ -1,4 +1,4 @@
-# Maison des Plantes
+# Maison des Plantes.
 
 - [Overview](#overview)
 - [MVP](#mvp)
