@@ -52,7 +52,7 @@ _**Maison des Plantes** is a blog-style application for any and all plant lovers
 | :--------------: | :----------------------------------------- |
 |      React       | _Client Front End_ |
 |   React Router   | _Client Front End_ |
-|       TBD        | _TDB_              |
+|       Rails      | _Server Back End_  |
 |       TBD        | _TDB_              |
 |       TBD        | _TDB_              |
 
