@@ -63,30 +63,12 @@ _**Maison des Plantes** is a blog-style application for any and all plant lovers
 #### Wireframes
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
+![Screen Shot 2021-12-10 at 9 11 03 AM](https://user-images.githubusercontent.com/91746116/145587106-27ce7034-f50e-455c-9541-fe5ee94148ff.png)
 
-![Dummy Link](url)
+![Screen Shot 2021-12-10 at 9 12 09 AM](https://user-images.githubusercontent.com/91746116/145587193-ea394871-b3dc-4866-98b1-65f3264d954a.png)
 
-- Desktop Landing
+![Screen Shot 2021-12-10 at 9 14 31 AM](https://user-images.githubusercontent.com/91746116/145587619-1ca9441a-2c11-4ecd-b87d-8f61adaf19cc.png)
 
-![Dummy Link](url)
-
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
 
 #### Component Tree
 
