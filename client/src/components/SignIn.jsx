@@ -44,7 +44,7 @@ const SignIn = (props) => {
       </label>
       <br />
       <button>Login</button>
-      <Link to='/register'>Create Account</Link>
+      <Link to='/create-account'>Create Account</Link>
     </form>
   );
 }

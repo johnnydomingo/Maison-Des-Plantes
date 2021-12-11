@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Route, Routes, useHistory } from 'react-router-dom';
+import { Route, useHistory } from 'react-router-dom';
+import Layout from '../components/Layout';
 import PostCreate from '../components/PostCreate.jsx';
 import PostEdit from '../components/PostEdit';
 import Home from '../screens/Home';
@@ -43,6 +44,7 @@ const MainContainer = ({ currentUser }) => {
 
   return (
     <div>
+      
       <Route>
         <Route path='/posts/:id/edit'>
           <PostEdit posts={posts} handlePostUpdate={handlePostUpdate} />
@@ -60,7 +62,7 @@ const MainContainer = ({ currentUser }) => {
             currentUser={currentUser}
           />
         </Route>
-      </Route>
+        </Route>
     </div>
   )
 }

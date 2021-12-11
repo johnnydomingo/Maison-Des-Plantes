@@ -15,7 +15,7 @@ import MainContainer from './containers/MainContainer';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
-  const history = useHistory;
+  const history = useHistory();
 
   useEffect(() => {
     const handleVerify = async () => {
@@ -45,10 +45,10 @@ function App() {
 
   return (
     <div className="App">
-        {/* <Layout currentUser={currentUser} handleLogout={handleLogout}> */}
+        <Layout currentUser={currentUser} handleLogout={handleLogout}>
         <Switch>
           <Route path='/login'>
-            <Login handleLogin={handleLogin} />
+            <SignIn handleLogin={handleLogin} />
           </Route>
           <Route path='/create-account'>
             <Register handleRegister={handleRegister} />
@@ -57,7 +57,7 @@ function App() {
             <MainContainer currentUser={currentUser}/>
           </Route>
         </Switch>
-      {/* </Layout> */}
+      </Layout>
     </div>
   );
 }
