@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Signin = () => {
+const SignIn = (props) => {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -10,10 +10,10 @@ const Signin = () => {
   const { handleLogin } = props;
 
   const handleChange = (ev) => {
-    const { firstName, lastName, value } = ev.target;
+    const { name, value } = ev.target;
     setFormData((prevState) => ({
       ...prevState,
-      [firstName, lastName]: value,
+      [name]: value,
     }));
   };
 
@@ -49,4 +49,4 @@ const Signin = () => {
   );
 }
 
-export default Signin;
+export default SignIn;

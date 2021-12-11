@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
-import { Switch, Route, useHistory } from 'react-router-dom';
-import PostCreate from '../screens/PostCreate';
-import PostEdit from '../screens/PostEdit';
+import { Route, Routes, useHistory } from 'react-router-dom';
+import PostCreate from '../components/PostCreate.jsx';
+import PostEdit from '../components/PostEdit';
 import Home from '../screens/Home';
 import PostDetail from '../screens/PostDetails';
 import { getAllPosts, postPost, putPost, deletePost } from '../services/post';
 
 
 
-const MainContainer = () => {
+const MainContainer = ({ currentUser }) => {
   const [posts, setPosts] = useState([]);
   const history = useHistory();
 
@@ -17,12 +17,12 @@ const MainContainer = () => {
       const postList = await getAllPosts();
       setPosts(postList);
     };
-    fetchPosts;
+    fetchPosts();
   }, []);
 
   const handlePostCreate = async (formData) => {
     const newPost = await postPost(formData);
-    setFoods((prevState) => [...prevState, newPost]);
+    setPosts((prevState) => [...prevState, newPost]);
     history.push('/');
   };
 
@@ -43,7 +43,7 @@ const MainContainer = () => {
 
   return (
     <div>
-      <Switch>
+      <Route>
         <Route path='/posts/:id/edit'>
           <PostEdit posts={posts} handlePostUpdate={handlePostUpdate} />
         </Route>
@@ -60,7 +60,7 @@ const MainContainer = () => {
             currentUser={currentUser}
           />
         </Route>
-      </Switch>
+      </Route>
     </div>
   )
 }

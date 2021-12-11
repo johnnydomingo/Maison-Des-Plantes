@@ -5,6 +5,7 @@ const Feed = ({ posts }) => {
     <div>
       {posts.map((post) => (
         <p>{post.content}</p>
+        
       ))}
     
     </div>
