@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 
-const PostEdit = ({ posts, handlePostUpdate }) => {
+const EditForm = ({ posts, handlePostUpdate }) => {
   const [formData, setFormData] = useState({
     content: '',
     image_url: '',
@@ -48,4 +48,4 @@ const PostEdit = ({ posts, handlePostUpdate }) => {
   );
 }
 
-export default PostEdit;
+export default EditForm;

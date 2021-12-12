@@ -1,10 +1,15 @@
-import Post from './components/Post.jsx';
+import Post from '../components/Post';
 
 
-const PostDetails = () => {
+
+const PostDetails = ({ currentUser, handlePostDelete}) => {
   return (
     <div>
-      <Post />
+      <Post
+        currentUser={currentUser}
+        handlePostDelete={handlePostDelete}
+      />
+      
     </div>
   )
 }

@@ -12,14 +12,14 @@ const Feed = ({ posts, handlePostDelete, currentUser }) => {
           {/* <p>{post.content}</p> */}
           <img src={post.image_url} />
           </Link>
-          {currentUser?.id === post.user_id && (
+          {/* {currentUser?.id === post.user_id && (
             <>
               <Link to={`/posts/${post.id}/edit`}>
                 <button>Edit</button>
               </Link>
               <button onCLick={() => handlePostDelete(post.id)}>Delete</button>
             </>
-          )}
+          )}  */}
         </div>
       ))}
     </div>

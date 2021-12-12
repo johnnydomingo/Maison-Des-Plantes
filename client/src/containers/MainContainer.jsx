@@ -40,6 +40,7 @@ const MainContainer = ({ currentUser }) => {
   const handlePostDelete = async (id) => {
     await deletePost(id);
     setPosts((prevState) => prevState.filter((post) => post.id !== id));
+    history.push('/');
   };
 
   return (
@@ -47,13 +48,13 @@ const MainContainer = ({ currentUser }) => {
       
       <Route>
         <Route path='/posts/:id/edit'>
-          <PostEdit posts={posts} handlePostUpdate={handlePostUpdate} />
+          <PostEdit posts={posts} handlePostUpdate={handlePostUpdate} currentUser={currentUser} />
         </Route>
         <Route path='/create-post'>
           <PostCreate handlePostCreate={handlePostCreate}/>
         </Route>
         <Route path='/posts/:id'>
-          <PostDetail currentUser={currentUser} />
+          <PostDetail currentUser={currentUser} handlePostDelete={handlePostDelete} />
         </Route>
         <Route exact path='/'>
           <Home
