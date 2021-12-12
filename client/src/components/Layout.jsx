@@ -1,12 +1,15 @@
 import Nav from "../components/Nav";
 
 
-const Layout = (props) => (
+const Layout = ({currentUser, handleLogout, children}) => (
   
   <div>
-  <Nav />
+    <Nav
+      currentUser={currentUser}
+      handleLogout={handleLogout}
+    />
   <div>
-      {props.children}
+      {children}
     </div>
     </div>
   )

@@ -34,7 +34,7 @@ import { NavLink } from "react-router-dom";
 //     </NavLink>
 //   </>
 // );
-const Nav = ({ currentUser, handleLogout, children }) => {
+const Nav = ({ currentUser, handleLogout }) => {
   return (
     <div>
       <header>
@@ -44,7 +44,7 @@ const Nav = ({ currentUser, handleLogout, children }) => {
             <NavLink to="/about">About</NavLink>
         {currentUser ? (
           <div>
-            <p>{currentUser.first_name}</p>
+            <p>Welcome, {currentUser.first_name} {currentUser.last_name}</p>
             <button onClick={handleLogout}>Logout</button>
           </div>
         ) : (
@@ -58,7 +58,7 @@ const Nav = ({ currentUser, handleLogout, children }) => {
           </nav>
         )} */}
       </header>
-      {children}
+      {/* {children} */}
   </div>
     // <nav>
     //   <NavLink className="home" to="/">

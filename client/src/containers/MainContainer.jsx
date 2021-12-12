@@ -57,6 +57,7 @@ const MainContainer = ({ currentUser }) => {
         </Route>
         <Route path='/'>
           <Home
+            
             posts={posts}
             handlePostDelete={handlePostDelete}
             currentUser={currentUser}
