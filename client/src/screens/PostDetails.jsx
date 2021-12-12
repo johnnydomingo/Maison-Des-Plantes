@@ -1,4 +1,12 @@
 import Post from './components/Post.jsx';
 
 
-const 
+const PostDetails = () => {
+  return (
+    <div>
+      <Post />
+    </div>
+  )
+}
+
+export default PostDetails;
