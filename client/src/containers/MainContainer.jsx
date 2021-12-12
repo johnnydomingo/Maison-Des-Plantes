@@ -11,6 +11,7 @@ import { getAllPosts, postPost, putPost, deletePost } from '../services/post';
 
 const MainContainer = ({ currentUser }) => {
   const [posts, setPosts] = useState([]);
+  const [toggleFetch, setToggleFetch] = useState(null)
   const history = useHistory();
 
   useEffect(() => {
@@ -48,7 +49,7 @@ const MainContainer = ({ currentUser }) => {
       
       <Route>
         <Route path='/posts/:id/edit'>
-          <PostEdit posts={posts} handlePostUpdate={handlePostUpdate} currentUser={currentUser} />
+          <PostEdit posts={posts} handlePostUpdate={handlePostUpdate} currentUser={currentUser} toggleFetch={toggleFetch} />
         </Route>
         <Route path='/create-post'>
           <PostCreate handlePostCreate={handlePostCreate}/>

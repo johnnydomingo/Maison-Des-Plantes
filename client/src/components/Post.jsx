@@ -20,12 +20,12 @@ const Post = ({ currentUser, handlePostDelete }) => {
   return (
     <div>
       {post ?
-        currentUser.id === post.user_id && (
+        currentUser?.id === post?.user_id && (
           <>
             <Link to={`/posts/${post.id}/edit`}>
               <button>Edit</button>
             </Link>
-            <button onCLick={() => handlePostDelete(post.id)}>Delete</button>
+            <button onClick={() => handlePostDelete(post.id)}>Delete</button>
           </>
         ) : null }
       <p>{post ? `${post.content}` : null}</p>
