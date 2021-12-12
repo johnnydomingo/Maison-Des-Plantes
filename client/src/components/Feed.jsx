@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Feed = ({ posts }) => {
+const Feed = ({ posts, handlePostDelete, currentUser }) => {
   // logic to connect user_id to first_name and last_name
   return (
     <div>
