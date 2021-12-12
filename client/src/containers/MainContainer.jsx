@@ -49,13 +49,13 @@ const MainContainer = ({ currentUser }) => {
         <Route path='/posts/:id/edit'>
           <PostEdit posts={posts} handlePostUpdate={handlePostUpdate} />
         </Route>
-        <Route path='/posts/new'>
+        <Route path='/create-post'>
           <PostCreate handlePostCreate={handlePostCreate}/>
         </Route>
         <Route path='/posts/:id'>
           <PostDetail currentUser={currentUser} />
         </Route>
-        <Route path='/'>
+        <Route exact path='/'>
           <Home
             
             posts={posts}
