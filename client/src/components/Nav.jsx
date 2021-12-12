@@ -39,12 +39,14 @@ const Nav = ({ currentUser, handleLogout }) => {
     <div>
       <header>
         <NavLink to="/"><h1>Maison des Plantes</h1></NavLink>
-        <NavLink to="/create-post">Drop-a-Seed</NavLink>
+        {/* <NavLink to="/create-post">Drop-a-Seed</NavLink> */}
             <NavLink to="/how-it-works">How It Works</NavLink>
             <NavLink to="/about">About</NavLink>
         {currentUser ? (
           <div>
+            <NavLink to="/create-post">Drop-a-Seed</NavLink>
             <p>Welcome, {currentUser.first_name} {currentUser.last_name}</p>
+            {/* <NavLink to="/create-post">Drop-a-Seed</NavLink> */}
             <button onClick={handleLogout}>Logout</button>
           </div>
         ) : (

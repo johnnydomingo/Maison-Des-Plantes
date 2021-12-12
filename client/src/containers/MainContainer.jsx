@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Route, useHistory } from 'react-router-dom';
 // import Layout from '../components/Layout';
 import PostCreate from '../components/PostCreate.jsx';
-import PostEdit from '../components/EditForm';
+import EditForm from '../components/EditForm';
 import Home from '../screens/Home';
 import PostDetail from '../screens/PostDetails';
 import { getAllPosts, postPost, putPost, deletePost } from '../services/post';
@@ -49,7 +49,7 @@ const MainContainer = ({ currentUser }) => {
       
       <Route>
         <Route path='/posts/:id/edit'>
-          <PostEdit posts={posts} handlePostUpdate={handlePostUpdate} currentUser={currentUser} toggleFetch={toggleFetch} />
+          <EditForm posts={posts} handlePostUpdate={handlePostUpdate} currentUser={currentUser} toggleFetch={toggleFetch} />
         </Route>
         <Route path='/create-post'>
           <PostCreate handlePostCreate={handlePostCreate}/>
