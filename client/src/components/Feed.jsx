@@ -8,7 +8,7 @@ const Feed = ({ posts, handlePostDelete, currentUser }) => {
       {posts.map((post) => (
         <div key={post.id}>
           <Link to={`/posts/${post.id}`}>
-          <p>{post.user_id}</p>
+            <p>{post.user.first_name} {post.user.last_name}</p>
           {/* <p>{post.content}</p> */}
           <img src={post.image_url} />
           </Link>
