@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Route, useHistory } from 'react-router-dom';
-// import Layout from '../components/Layout';
 import PostCreate from '../components/PostCreate.jsx';
 import EditForm from '../components/EditForm';
 import Home from '../screens/Home';
