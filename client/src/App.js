@@ -10,7 +10,7 @@ import {
   verifyUser,
   removeToken,
 } from './services/auth';
-import Register from './components/Register';
+import CreateAccount from './components/CreateAccount';
 import MainContainer from './containers/MainContainer';
 
 function App() {
@@ -52,7 +52,7 @@ function App() {
             <SignIn handleLogin={handleLogin} />
           </Route>
           <Route path='/create-account'>
-            <Register handleRegister={handleRegister} />
+            <CreateAccount handleRegister={handleRegister} />
           </Route>
           <Route path='/'>
             <MainContainer currentUser={currentUser}/>
