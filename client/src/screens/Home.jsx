@@ -2,6 +2,10 @@ import Feed from "../components/Feed.jsx";
 import HowItWorks from "../components/HowItWorks.jsx";
 import { Link } from "react-router-dom";
 
+
+
+
+
 const Home = ({ posts, currentUser }) => {
   return (
     <div>

@@ -12,7 +12,6 @@ import { getAllPosts, postPost, putPost, deletePost } from '../services/post';
 
 const MainContainer = ({ currentUser }) => {
   const [posts, setPosts] = useState([]);
-  // const [toggleFetch, setToggleFetch] = useState(null)
   const history = useHistory();
 
   useEffect(() => {
@@ -45,6 +44,12 @@ const MainContainer = ({ currentUser }) => {
     history.push('/');
   };
 
+  posts.sort(function (a, b) {
+    let time1 = new Date(a.created_at);
+    let time2 = new Date(b.created_at);
+    return time2 - time1;
+  });
+
   return (
     <div>
       
@@ -54,7 +59,6 @@ const MainContainer = ({ currentUser }) => {
             posts={posts}
             handlePostUpdate={handlePostUpdate}
             currentUser={currentUser}
-           
           />
         </Route>
         <Route path='/create-post'>
