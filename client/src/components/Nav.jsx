@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-// import account from "../assets/account.png";
+import '../css/Nav.css';
 
 // const authenticatedOptions = (
 //   <>
@@ -36,9 +36,9 @@ import { NavLink } from "react-router-dom";
 // );
 const Nav = ({ currentUser, handleLogout }) => {
   return (
-    <div>
+    <div className="nav-bar">
       <header>
-        <NavLink to="/"><h1>Maison des Plantes</h1></NavLink>
+        <NavLink to="/"><h1 className="maison">Maison des Plantes</h1></NavLink>
         {/* <NavLink to="/create-post">Drop-a-Seed</NavLink> */}
         {/* <NavLink to="/how-it-works">How It Works</NavLink> */}
             <a href = "#how-it-works">How It Works</a>
