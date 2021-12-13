@@ -1,5 +1,5 @@
 import account from "../assets/account.png";
-import './css/About.css';
+import '../css/About.css';
 
 const About = () => {
   return (
@@ -13,3 +13,5 @@ const About = () => {
 </div>
 )
 }
+
+export default About;

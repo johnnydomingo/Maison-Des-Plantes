@@ -4,6 +4,7 @@ import { Route, useHistory } from 'react-router-dom';
 import PostCreate from '../components/PostCreate.jsx';
 import EditForm from '../components/EditForm';
 import Home from '../screens/Home';
+import About from '../screens/About';
 import PostDetail from '../screens/PostDetails';
 import { getAllPosts, postPost, putPost, deletePost } from '../services/post';
 
@@ -74,6 +75,9 @@ const MainContainer = ({ currentUser }) => {
             currentUser={currentUser}
             
           />
+        </Route>
+        <Route path='/about'>
+          <About />
         </Route>
         </Route>
     </div>

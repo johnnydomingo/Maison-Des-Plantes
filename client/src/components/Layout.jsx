@@ -1,4 +1,5 @@
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 
 const Layout = ({currentUser, handleLogout, children}) => (
@@ -11,6 +12,7 @@ const Layout = ({currentUser, handleLogout, children}) => (
   <div>
       {children}
     </div>
+    <Footer />
     </div>
   )
 
