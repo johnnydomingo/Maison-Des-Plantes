@@ -20,7 +20,7 @@ const Post = ({ currentUser, handlePostDelete }) => {
 
 //   let user = [];
 //   post.map((post) => (
-  
+//     let newUser = user.find((name)=> name)
 // ))
 
   return (
@@ -34,9 +34,11 @@ const Post = ({ currentUser, handlePostDelete }) => {
             <button onClick={() => handlePostDelete(post.id)}>Delete</button>
           </>
         ) : null}
-      <article>{post ? `${post.user_id}` : null}</article>
-      <p>{post ? `${post.content}` : null}</p>
-      <img src={post ? `${post.image_url}` : null} />
+      <div className="post-card">
+        <article>{post ? `${post.user_id}` : null}</article>
+        <p>{post ? `${post.content}` : null}</p>
+        <img src={post ? `${post.image_url}` : null} />
+        </div>
     </div>
   )
 }

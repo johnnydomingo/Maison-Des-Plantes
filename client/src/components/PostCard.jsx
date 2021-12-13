@@ -1,4 +1,4 @@
-const PostCard = () => {
+const PostCard = ({post}) => {
   return (
     <div className='post-card'>
       <p id='content'>{post.content}</p>
@@ -7,3 +7,4 @@ const PostCard = () => {
     </div>
   )
 }
+export default PostCard;
