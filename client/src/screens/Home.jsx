@@ -1,5 +1,6 @@
 import Feed from "../components/Feed.jsx";
 import HowItWorks from "../components/HowItWorks.jsx";
+import '../css/Home.css';
 import { Link } from "react-router-dom";
 
 
@@ -8,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Home = ({ posts, currentUser }) => {
   return (
-    <div>
+    <div className="home">
       <div className="sub-heading">
         <h4>A Place to Share Your House Plants...</h4>
       </div>
