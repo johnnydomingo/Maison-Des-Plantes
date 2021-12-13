@@ -12,7 +12,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1
   def show
-    render json: @post
+    render json: @post, include: {user: {only: [:first_name, :last_name]}}
   end
 
   # POST /posts
@@ -20,7 +20,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     @post.user = @current_user
     if @post.save
-      render json: @post, status: :created
+      render json: @post, include: {user: {only: [:first_name, :last_name]}}, status: :created
     else
       render json: @post.errors, status: :unprocessable_entity
     end
@@ -29,7 +29,7 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1
   def update
     if @post.update(post_params)
-      render json: @post
+      render json: @post, include: {user: {only: [:first_name, :last_name]}}
     else
       render json: @post.errors, status: :unprocessable_entity
     end

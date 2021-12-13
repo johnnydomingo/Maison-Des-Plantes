@@ -18,11 +18,6 @@ const Post = ({ currentUser, handlePostDelete }) => {
     fetchPost();
   }, [id]);
 
-//   let user = [];
-//   post.map((post) => (
-//     let newUser = user.find((name)=> name)
-// ))
-
   return (
     <div>
       {post ?
@@ -35,7 +30,7 @@ const Post = ({ currentUser, handlePostDelete }) => {
           </>
         ) : null}
       <div className="post-card">
-        <article>{post ? `${post.user_id}` : null}</article>
+        <article>{post ? `${post.user.first_name} ${post.user.last_name}`  : null}</article>
         <p>{post ? `${post.content}` : null}</p>
         <img src={post ? `${post.image_url}` : null} />
         </div>
