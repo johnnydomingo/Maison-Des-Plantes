@@ -24,6 +24,7 @@ const EditForm = ({ posts, handlePostUpdate }) => {
       ...prevState,
       [name]: value,
     }));
+    
   };
 
 

@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 const Post = ({ currentUser, handlePostDelete }) => {
   const [post, setPost] = useState(null);
   const { id } = useParams();
+  
 
 
   useEffect(() => {
@@ -16,6 +17,11 @@ const Post = ({ currentUser, handlePostDelete }) => {
     };
     fetchPost();
   }, [id]);
+
+//   let user = [];
+//   post.map((post) => (
+  
+// ))
 
   return (
     <div>
@@ -27,7 +33,8 @@ const Post = ({ currentUser, handlePostDelete }) => {
             </Link>
             <button onClick={() => handlePostDelete(post.id)}>Delete</button>
           </>
-        ) : null }
+        ) : null}
+      <article>{post ? `${post.user_id}` : null}</article>
       <p>{post ? `${post.content}` : null}</p>
       <img src={post ? `${post.image_url}` : null} />
     </div>

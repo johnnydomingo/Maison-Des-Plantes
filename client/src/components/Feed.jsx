@@ -2,15 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Feed = ({ posts, handlePostDelete, currentUser }) => {
-  // logic to connect user_id to first_name and last_name
   return (
     <div>
-      {posts.map((post) => (
+      {posts?.map((post) => (
         <div key={post.id}>
           <Link to={`/posts/${post.id}`}>
-            <p>{post.user.first_name} {post.user.last_name}</p>
+            {/* { post?.user &&  */}
+              <p>{post?.user?.first_name} {post?.user?.last_name}</p>
+            {/* } */}
           {/* <p>{post.content}</p> */}
-          <img src={post.image_url} />
+          <img src={post?.image_url} />
           </Link>
           {/* {currentUser?.id === post.user_id && (
             <>
