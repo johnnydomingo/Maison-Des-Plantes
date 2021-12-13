@@ -1,6 +1,6 @@
 const HowItWorks = () => {
   return (
-    <div>
+    <div id="how-it-works">
       <div>
         <h3 className="instructions">Dropping a Seed is as easy as counting to three!</h3>
       </div>

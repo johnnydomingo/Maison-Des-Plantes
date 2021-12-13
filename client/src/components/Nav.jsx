@@ -40,7 +40,8 @@ const Nav = ({ currentUser, handleLogout }) => {
       <header>
         <NavLink to="/"><h1>Maison des Plantes</h1></NavLink>
         {/* <NavLink to="/create-post">Drop-a-Seed</NavLink> */}
-            <NavLink to="/how-it-works">How It Works</NavLink>
+        {/* <NavLink to="/how-it-works">How It Works</NavLink> */}
+            <a href = "#how-it-works">How It Works</a>
             <NavLink to="/about">About</NavLink>
         {currentUser ? (
           <div>
