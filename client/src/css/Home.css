@@ -1,4 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+
 .home {
   background-color: #FAF7EF;
   padding-top: 20vh;
+}
+.landing-message{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  float: left;
+  padding-top: 15rem;
+  margin-left: 2rem;
+}
+.sub-heading {
+  font-family: 'Spicy Rice', cursive;
+  font-size: 30px;
+  color: #A3C4A7;
+  letter-spacing: 0.5px;
+}
+#share{
+  font-family: 'Anonymous Pro', monospace;
+  margin-top: -20px;
+}
+.home-image{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-end;
+}
+.home-image img{
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-end; */
+  width: 35vw;
+  height: 60vh;
+  margin-right: 4rem;
+  margin-left: 0;
+}
+.landing-image{
+  border-radius: 15px;
+  margin-top: 4rem;
 }

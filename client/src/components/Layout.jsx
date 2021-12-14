@@ -11,7 +11,6 @@ const Layout = ({currentUser, handleLogout, children}) => (
       handleLogout={handleLogout}
     />
     </div>
-{/* <hr></hr> */}
   <div>
       {children}
     </div>
