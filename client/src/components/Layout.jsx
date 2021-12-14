@@ -5,10 +5,13 @@ import Footer from "../components/Footer";
 const Layout = ({currentUser, handleLogout, children}) => (
   
   <div>
+    <div>
     <Nav
       currentUser={currentUser}
       handleLogout={handleLogout}
     />
+    </div>
+{/* <hr></hr> */}
   <div>
       {children}
     </div>

@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
 
 .nav-bar {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   position: fixed;
+  justify-content: center;
   width: 100vw;
   background-color: #FAF7EF;
-  padding-top: 1rem;
-  /* padding-bottom: 0.5rem; */
-  margin-bottom: 8rem;
+  top: 0;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-style: double bottom;
+  border-bottom: 3px solid #44714A;
 }
 .maison {
   display: flex;
@@ -19,9 +23,20 @@
   text-decoration: none;
   color: #A3C4A7;
 }
-.nav-links {
+.link {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  color: black;
   display: inline-block;
+  padding-right: 3vw;
 }
+/* .nav-links {
+  display: inline-block;
+} */
+
 a {
   text-decoration: none !important;
 }
+
