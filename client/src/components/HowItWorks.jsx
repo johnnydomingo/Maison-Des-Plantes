@@ -1,3 +1,5 @@
+import '../css/HowItWorks.css';
+
 const HowItWorks = () => {
   return (
     <div id="how-it-works">

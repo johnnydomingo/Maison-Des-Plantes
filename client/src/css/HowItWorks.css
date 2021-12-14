@@ -1,0 +1,23 @@
+#how-it-works{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.instructions{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.card-one{
+  margin-top: 4rem;
+}
+.card-two{
+  margin-top: 4rem;
+}
+.card-three{
+  margin-top: 4rem;
+}
