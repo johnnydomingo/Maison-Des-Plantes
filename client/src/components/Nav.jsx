@@ -7,11 +7,11 @@ const Nav = ({ currentUser, handleLogout }) => {
     <div>
     <div className="nav-bar">
       <header>
-        <NavLink className="link" to="/">
+        <NavLink  to="/">
           <h1 className="maison">Maison des Plantes</h1>
         </NavLink>
         <div className="nav-links">
-          <a  className="link" id="home-link" href="#home">How It Works</a>
+          <a  className="link" id="home-link" href="#top">How It Works</a>
           <NavLink className="link" id="home-link" to="/about">About</NavLink>
           {currentUser ? (
             <div>
@@ -23,7 +23,7 @@ const Nav = ({ currentUser, handleLogout }) => {
               <button id="logout-button" onClick={handleLogout}>Logout</button>
             </div>
           ) : (
-            <NavLink className='link' to="/login">Login</NavLink>
+            <NavLink className='link' id="login" to="/login">Login</NavLink>
           )}
         </div>     
         </header>
