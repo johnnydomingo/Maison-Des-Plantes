@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+
+.home {
+  background-color: #f5f1e5;
+  padding-top: 25vh;
+}
+.landing-message{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  float: left;
+  padding-top: 15rem;
+  margin-left: 8rem;
+}
+.sub-heading {
+  font-family: 'Spicy Rice', cursive;
+  font-size: 35px;
+  color: #A3C4A7;
+  letter-spacing: 0.5px;
+}
+#share{
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  margin-top: -45px;
+}
+#home-button, button {
+  padding-top: 10px;
+  background-color: #A3C4A7;
+  padding-bottom: 10px;
+  padding-left: 22px;
+  /* padding-right: 15px; */
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: #44714A;
+  border: none;
+  border-radius: 15px;
+}
+.home-button{
+  padding-left: 3px;
+  padding-right: 16px;
+}
+/* button {
+  padding-top: 10px;
+  background-color: #A3C4A7;
+  padding-bottom: 10px;
+  padding-left: 18.5px;
+  padding-right: 15px;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: #44714A;
+  border-radius: 15px;
+} */
+
+.home-image{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-end;
+}
+.home-image img{
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-end; */
+  max-width: 40vw;
+  max-height: 65vh;
+  margin-right: 8rem;
+  margin-left: 0;
+  margin-bottom: 18rem;
+}
+.landing-image{
+  border-radius: 15px;
+  margin-top: 4rem;
+  /* margin-bottom: 20rem; */
+}
