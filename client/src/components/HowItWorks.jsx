@@ -3,7 +3,7 @@ import account from "../assets/account.png";
 
 const HowItWorks = () => {
   return (
-    <div>
+    <div id="section-two">
       <div className="monstera">
         <img src={account} id="leaf" alt="leaf"/>
       </div>

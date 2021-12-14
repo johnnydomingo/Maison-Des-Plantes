@@ -11,7 +11,7 @@ const Nav = ({ currentUser, handleLogout }) => {
           <h1 className="maison">Maison des Plantes</h1>
         </NavLink>
         <div className="nav-links">
-          <a  className="link" href="#home-button">How It Works</a>
+          <a  className="link" href="#home">How It Works</a>
           <NavLink className="link" to="/about">About</NavLink>
           {currentUser ? (
             <div>
