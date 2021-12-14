@@ -55,7 +55,7 @@ div{
   flex-wrap: wrap;
   justify-content: flex-end;
   margin-top: -11rem;
-  /* justify-content: space-evenly; */
+  margin-bottom: 7rem;
 }
 #edit-button{
   margin-top: 0.5rem;
