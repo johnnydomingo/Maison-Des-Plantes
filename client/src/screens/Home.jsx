@@ -21,14 +21,14 @@ const Home = ({ posts, currentUser }) => {
       </div>
       {currentUser ? (
         <div className="drop-something">
-          <Link to="/create-post">
+          <Link id="home-button"to="/create-post">
             <button type="button" className="home-button">
               Drop Somethin'
             </button>
           </Link>
         </div>
       ) : (
-        <Link to="/login">Drop Somethin'</Link>
+        <Link id="home-button" to="/login">Drop Somethin'</Link>
       )}
       </div>
       <div className="home-image">

@@ -8,7 +8,7 @@
   position: fixed;
   justify-content: center;
   width: 100vw;
-  background-color: #FAF7EF;
+  background-color: #f5f1e5;
   top: 0;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
@@ -26,9 +26,9 @@
 }
 .link {
   font-family: 'Anonymous Pro', monospace;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 300;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   color: black;
   display: inline-block;
   padding-right: 3vw;

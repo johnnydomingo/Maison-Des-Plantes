@@ -3,7 +3,7 @@
 
 
 .home {
-  background-color: #FAF7EF;
+  background-color: #f5f1e5;
   padding-top: 20vh;
 }
 .landing-message{
@@ -26,9 +26,21 @@
   font-family: 'Anonymous Pro', monospace;
   font-size: 20px;
   letter-spacing: 0.5px;
-  margin-top: -40px;
-  
+  margin-top: -45px;
 }
+#home-button {
+  padding-top: 10px;
+  background-color: #A3C4A7;
+  padding-bottom: 10px;
+  padding-left: 18.5px;
+  padding-right: 15px;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: #44714A;
+  border-radius: 15px;
+}
+
 .home-image{
   display: flex;
   flex-direction: row;
@@ -50,4 +62,5 @@
 .landing-image{
   border-radius: 15px;
   margin-top: 4rem;
+  margin-bottom: 10rem
 }
