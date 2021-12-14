@@ -16,7 +16,12 @@ const MainContainer = ({ currentUser }) => {
   useEffect(() => {
     const fetchPosts = async () => {
       const postList = await getAllPosts();
-      setPosts(postList);
+      const sortPosts=postList.sort(function (a, b) {
+        let time1 = new Date(a.created_at);
+        let time2 = new Date(b.created_at);
+        return time2 - time1;
+      });
+      setPosts(sortPosts);
     };
     fetchPosts();
   }, []);
@@ -43,11 +48,11 @@ const MainContainer = ({ currentUser }) => {
     history.push('/');
   };
 
-  posts.sort(function (a, b) {
-    let time1 = new Date(a.created_at);
-    let time2 = new Date(b.created_at);
-    return time2 - time1;
-  });
+  // posts.sort(function (a, b) {
+  //   let time1 = new Date(a.created_at);
+  //   let time2 = new Date(b.created_at);
+  //   return time2 - time1;
+  // });
 
   return (
     <div>
