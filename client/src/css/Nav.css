@@ -27,7 +27,7 @@
   flex-direction: row;
   /* padding-left: 5vw; */
   font-family: 'Bungee Shade';
-  font-size: 40px;
+  font-size: 43px;
   text-decoration: none;
   color: #A3C4A7;
   justify-content: center;
@@ -36,6 +36,8 @@
   align-content: center;
 }
 .nav-links {
+  font-family: 'Anonymous Pro', monospace;
+  margin-top: -4rem;
   display: inline-flex;
 }
 #home-link {
@@ -44,7 +46,7 @@
 .link {
   font-family: 'Anonymous Pro', monospace;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 800;
   letter-spacing: 2px;
   color: black;
   display: inline-block;
