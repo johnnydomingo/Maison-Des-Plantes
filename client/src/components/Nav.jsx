@@ -11,16 +11,16 @@ const Nav = ({ currentUser, handleLogout }) => {
           <h1 className="maison">Maison des Plantes</h1>
         </NavLink>
         <div className="nav-links">
-          <a  className="link" href="#home">How It Works</a>
-          <NavLink className="link" to="/about">About</NavLink>
+          <a  className="link" id="home-link" href="#home">How It Works</a>
+          <NavLink className="link" id="home-link" to="/about">About</NavLink>
           {currentUser ? (
             <div>
-              <NavLink className='link' to="/create-post">Drop-a-Seed</NavLink>
-              <p>
+              <NavLink className='link' id="home-link" to="/create-post">Drop-a-Seed</NavLink>
+              <p className="link">
                 Welcome, {currentUser.first_name} {currentUser.last_name}
               </p>
               {/* <NavLink to="/create-post">Drop-a-Seed</NavLink> */}
-              <button onClick={handleLogout}>Logout</button>
+              <button id="logout-button" onClick={handleLogout}>Logout</button>
             </div>
           ) : (
             <NavLink className='link' to="/login">Login</NavLink>

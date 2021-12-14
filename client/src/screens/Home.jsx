@@ -28,7 +28,7 @@ const Home = ({ posts, currentUser }) => {
           </Link>
         </div>
       ) : (
-        <Link id="home-button" to="/login">Drop Somethin'</Link>
+        <Link id="home-button" className="home-button" to="/login">Drop Somethin'</Link>
       )}
       </div>
       <div className="home-image">

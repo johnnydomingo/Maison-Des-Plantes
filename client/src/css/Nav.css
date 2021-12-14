@@ -24,6 +24,12 @@
   text-decoration: none;
   color: #A3C4A7;
 }
+.nav-links {
+  display: inline-flex;
+}
+#home-link {
+  padding-top: 1.2rem;
+}
 .link {
   font-family: 'Anonymous Pro', monospace;
   font-size: 18px;
@@ -33,10 +39,18 @@
   display: inline-block;
   padding-right: 3vw;
 }
-/* .nav-links {
-  display: inline-block;
-} */
-
+#logout-button{
+  padding-top: 10px;
+  background-color: #A3C4A7;
+  padding-bottom: 10px;
+  padding-left: 18.5px;
+  padding-right: 15px;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: #44714A;
+  border-radius: 15px;
+}
 a {
   text-decoration: none !important;
 }
