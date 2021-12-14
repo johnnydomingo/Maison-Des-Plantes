@@ -12,6 +12,7 @@ import { getAllPosts, postPost, putPost, deletePost } from '../services/post';
 const MainContainer = ({ currentUser }) => {
   const [posts, setPosts] = useState([]);
   const history = useHistory();
+  
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -58,23 +59,21 @@ const MainContainer = ({ currentUser }) => {
     <div>
       
       <Route>
-        <Route path='/posts/:id/edit'>
-          <EditForm
-            posts={posts}
-            handlePostUpdate={handlePostUpdate}
-            currentUser={currentUser}
-          />
-        </Route>
         <Route path='/create-post'>
           <PostCreate
             handlePostCreate={handlePostCreate}
-            
           /> 
         </Route>
         <Route path='/posts/:id'>
           <PostDetail currentUser={currentUser}
             handlePostDelete={handlePostDelete}
           />
+          <Route path='/posts/:id/edit'>
+            <EditForm
+              currentUser={currentUser}
+              handlePostUpdate={handlePostUpdate}
+            />
+          </Route>
         </Route>
         <Route exact path='/'>
           <Home

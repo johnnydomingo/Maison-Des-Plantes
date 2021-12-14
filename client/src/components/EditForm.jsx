@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import '../css/EditForm.css';
 
 
 const EditForm = ({ posts, handlePostUpdate }) => {
@@ -15,7 +16,7 @@ const EditForm = ({ posts, handlePostUpdate }) => {
       const postContent = posts.find((post) => post.id === Number(id));
       setFormData({ content: postContent.content, image_url: postContent.image_url });
     };
-    if (posts.length) prefillFormData();
+    if (posts) prefillFormData();
   }, [posts, id]);
 
   const handleChange = (ev) => {
@@ -26,7 +27,6 @@ const EditForm = ({ posts, handlePostUpdate }) => {
     }));
     
   };
-
 
   return (
     <form

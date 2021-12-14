@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
 div{
   background-color: #f5f1e5;
 }
@@ -7,17 +9,17 @@ div{
   align-content: center;
   flex-wrap: nowrap;
   align-items: center;
-  background-color: red;
+  /* background-color: red; */
   margin-left: 5rem;
   margin-right: 5rem;
-  margin-top: 15rem;
+  padding-top: 15rem;
   margin-bottom: 8rem;
 }
 #post-details-image {
   max-width: 400px;
   height: 520px;
   object-fit: cover;
-  margin-left: 4rem;
+  margin-left: 6rem;
   /* max-width: 50vw;
   max-height: 50vh; */
   border-radius: 15px;
@@ -28,6 +30,7 @@ div{
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: flex-start;
+  font-family: 'Anonymous Pro', monospace;
 }
 #author  {
   /* display: flex;
@@ -35,9 +38,33 @@ div{
   align-content: center;
   flex-wrap: nowrap;
   align-items: center; */
-  margin-top: -10rem;
+  font-size: 25px;
+  margin-top: -5rem;
+  margin-bottom: 5rem;
   padding-left: 4rem;
 }
 #content{
+  font-size: 21px;
+  text-align: left;
   padding-left: 4rem;
+  padding-right: 4rem;
+}
+.edit-buttons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: -11rem;
+  /* justify-content: space-evenly; */
+}
+#edit-button{
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  padding-right: 1rem;
+}
+
+#delete-button{
+  margin-top: 0.5rem;
+  margin-right: 36.5rem;
+  padding-right: 1rem;
 }
