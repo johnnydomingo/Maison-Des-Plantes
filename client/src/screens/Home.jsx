@@ -12,7 +12,7 @@ const Home = ({ posts, currentUser }) => {
     <div className="home">
       <div className="landing-message">
       <div className="sub-heading">
-        <h4>A Place to Share Your House Plants...</h4>
+        <h4 id="home">A Place to Share Your House Plants...</h4>
       </div>
       <div id="share">
         <h5>

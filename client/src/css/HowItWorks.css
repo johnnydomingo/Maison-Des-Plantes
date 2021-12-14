@@ -1,7 +1,11 @@
-#how-it-works{
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
+#post-instructions{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 .instructions{
   display: flex;
@@ -9,15 +13,83 @@
   align-content: center;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  position: absolute;
+  font-size: 26px;
+  font-family: 'Spicy Rice', cursive;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+  /* position: absolute; */
+}
+#leaf {
+  width: 10vh;
+  height: 10vh;
 }
 .card-one{
+  display: flex;
+  flex-direction: row;
   margin-top: 4rem;
+  /* background-color: #f5f1e5; */
+  border: 1px solid black;
+  border-radius: 12px;
+  box-shadow: 2px 2px 0.4em #44714A;
+  margin-right: 2rem;
+  max-width: 30vw;
 }
 .card-two{
+  display: flex;
+  flex-direction: row;
   margin-top: 4rem;
+  border: 1px solid black;
+  border-radius: 12px;
+  box-shadow: 2px 2px 0.4em #44714A;
+  margin-right: 2rem;
+  max-width: 30vw;
 }
 .card-three{
+  display: flex;
+  flex-direction: row;
   margin-top: 4rem;
+  border: 1px solid black;
+  border-radius: 12px;
+  box-shadow: 2px 2px 0.4em #44714A;
+  max-width: 30vw;
+}
+.step-1{
+  font-size: 26px;
+  font-family: 'Spicy Rice', cursive;
+  padding-right: 10px;
+  margin-left: 1.5rem;
+}
+.one{
+  font-size: 26px;
+  font-family: 'Spicy Rice', cursive;
+  letter-spacing: 1px;
+  /* text-align: center; */
+  padding-right: 3rem;
+  margin-top: 3rem;
+}
+.step-2{
+  font-size: 26px;
+  font-family: 'Spicy Rice', cursive;
+  padding-right: 10px;
+  margin-left: 1.5rem;
+}
+.two{
+  font-size: 26px;
+  font-family: 'Spicy Rice', cursive;
+  /* text-align: center; */
+  padding-right: 3rem;
+  margin-top: 3rem;
+}
+.step-3{
+  font-size: 26px;
+  font-family: 'Spicy Rice', cursive;
+  padding-right: 10px;
+  margin-left: 1.5rem;
+}
+.three{
+  font-size: 26px;
+  font-family: 'Spicy Rice', cursive;
+  /* text-align: center; */
+  padding-right: 3rem;
+  margin-top: 3rem;
 }

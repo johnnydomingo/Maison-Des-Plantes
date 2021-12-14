@@ -4,7 +4,7 @@
 
 .home {
   background-color: #f5f1e5;
-  padding-top: 20vh;
+  padding-top: 35vh;
 }
 .landing-message{
   display: flex;
@@ -58,9 +58,10 @@
   max-height: 65vh;
   margin-right: 8rem;
   margin-left: 0;
+  margin-bottom: 20rem;
 }
 .landing-image{
   border-radius: 15px;
   margin-top: 4rem;
-  margin-bottom: 10rem
+  /* margin-bottom: 20rem; */
 }
