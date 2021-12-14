@@ -41,6 +41,7 @@ const Nav = ({ currentUser, handleLogout }) => {
         <NavLink to="/"><h1 className="maison">Maison des Plantes</h1></NavLink>
         {/* <NavLink to="/create-post">Drop-a-Seed</NavLink> */}
         {/* <NavLink to="/how-it-works">How It Works</NavLink> */}
+        <div className='nav-links'>
             <a href = "#how-it-works">How It Works</a>
             <NavLink to="/about">About</NavLink>
         {currentUser ? (
@@ -53,6 +54,7 @@ const Nav = ({ currentUser, handleLogout }) => {
         ) : (
             <NavLink to="/login">Login</NavLink>
         )}
+        </div>
         {/* {currentUser && (
           <nav>
             <NavLink to="/create-post">Drop-a-Seed</NavLink>
