@@ -20,8 +20,9 @@
   /* position: absolute; */
 }
 #leaf {
-  width: 10vh;
-  height: 10vh;
+  width: 20vh;
+  height: 20vh;
+  margin-bottom: 6rem;
 }
 .card-one{
   display: flex;

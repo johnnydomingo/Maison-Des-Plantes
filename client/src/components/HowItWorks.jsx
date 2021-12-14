@@ -4,14 +4,17 @@ import account from "../assets/account.png";
 const HowItWorks = () => {
   return (
     <div>
+      <div className="monstera">
+        <img src={account} id="leaf" alt="leaf"/>
+      </div>
       <div id="how-it-works">
         <h3 id="section" className="instructions">
           Dropping a Seed is as easy as counting to three!
         </h3>
       </div>
-      <div className="monstera">
+      {/* <div className="monstera">
         <img src={account} id="leaf" alt="leaf"/>
-      </div>
+      </div> */}
       <div id="post-instructions">
         <div className="card-one">
           <h3 className="step-1">1.</h3>
