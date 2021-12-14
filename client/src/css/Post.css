@@ -1,0 +1,43 @@
+div{
+  background-color: #f5f1e5;
+}
+.post-card {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: red;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 15rem;
+  margin-bottom: 8rem;
+}
+#post-details-image {
+  max-width: 400px;
+  height: 520px;
+  object-fit: cover;
+  margin-left: 4rem;
+  /* max-width: 50vw;
+  max-height: 50vh; */
+  border-radius: 15px;
+}
+.post-text{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+#author  {
+  /* display: flex;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center; */
+  margin-top: -10rem;
+  padding-left: 4rem;
+}
+#content{
+  padding-left: 4rem;
+}

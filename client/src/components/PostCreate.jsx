@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import '../css/PostCreate.css';
 
 const PostCreate = ({ handlePostCreate }) => {
   const [formData, setFormData] = useState({
@@ -17,7 +17,7 @@ const PostCreate = ({ handlePostCreate }) => {
   };
 
   return (
-    <form 
+    <form id="create-form" 
       onSubmit={(ev) => {
         ev.preventDefault();
         handlePostCreate(formData);

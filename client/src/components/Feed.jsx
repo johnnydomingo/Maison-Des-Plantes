@@ -14,7 +14,7 @@ const Feed = ({ posts, handlePostDelete, currentUser }) => {
               <p>{post?.user?.first_name} {post?.user?.last_name}</p>
             {/* } */}
           {/* <p>{post.content}</p> */}
-          <img src={post?.image_url} />
+          <img id="post-image" src={post?.image_url} alt="title" />
           </Link>
           {/* {currentUser?.id === post.user_id && (
             <>

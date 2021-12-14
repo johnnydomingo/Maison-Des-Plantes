@@ -16,7 +16,7 @@ const MainContainer = ({ currentUser }) => {
   useEffect(() => {
     const fetchPosts = async () => {
       const postList = await getAllPosts();
-      const sortPosts=postList.sort(function (a, b) {
+      const sortPosts = postList.sort(function (a, b) {
         let time1 = new Date(a.created_at);
         let time2 = new Date(b.created_at);
         return time2 - time1;
@@ -81,7 +81,6 @@ const MainContainer = ({ currentUser }) => {
             posts={posts}
             handlePostDelete={handlePostDelete}
             currentUser={currentUser}
-            
           />
         </Route>
         <Route path='/about'>
