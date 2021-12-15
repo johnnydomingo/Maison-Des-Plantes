@@ -2,15 +2,15 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import Layout from './components/Layout';
-// import Login from './screens/Login';
-import SignIn from './components/SignIn'
+import Login from './screens/Login';
+// import SignIn from './components/SignIn'
 import {
   loginUser,
   registerUser,
   verifyUser,
   removeToken,
 } from './services/auth';
-import CreateAccount from './components/CreateAccount';
+import Register from './screens/Register';
 import MainContainer from './containers/MainContainer';
 
 function App() {
@@ -49,10 +49,10 @@ function App() {
         <Layout currentUser={currentUser} handleLogout={handleLogout}>
         <Switch>
           <Route path='/login'>
-            <SignIn handleLogin={handleLogin} />
+            <Login handleLogin={handleLogin} />
           </Route>
-          <Route path='/create-account'>
-            <CreateAccount handleRegister={handleRegister} />
+          <Route path='/register'>
+            <Register handleRegister={handleRegister} />
           </Route>
           <Route path='/'>
             <MainContainer currentUser={currentUser}/>
