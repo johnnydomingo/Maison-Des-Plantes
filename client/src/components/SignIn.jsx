@@ -24,28 +24,26 @@ const SignIn = (props) => {
       handleLogin(formData);
     }}>
       <h3>Login</h3>
-      <label>
-        email
+      <div className="login-form">
         <input
           type='text'
-          name='email'
+            name='email'
+            placeholder='email'
           value={email}
           onChange={handleChange}
         />
-      </label>
       <br />
-      <label>
-        password
         <input
           type='password'
           name='password'
+          placeholder='password'
           value={password}
           onChange={handleChange}
         />
-      </label>
       <br />
       <button>Login</button>
       <Link to='/create-account'>Create Account</Link>
+      </div>
     </form>
   );
 }

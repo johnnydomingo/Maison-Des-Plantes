@@ -1,4 +1,14 @@
 #login-form{
-  margin-top: 40vh;
-  margin-bottom: 40vh;
+  background-color: #f5f1e5;
+  margin-top: 19vh;
+  padding-top: 20vh;
+  margin-bottom: 28vh;
+}
+.login-form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }

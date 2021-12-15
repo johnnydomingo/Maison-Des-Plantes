@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Route, useHistory } from 'react-router-dom';
+import '../css/MainContainer.css';
 import PostCreate from '../components/PostCreate.jsx';
 import EditForm from '../components/EditForm';
 import Home from '../screens/Home';
@@ -56,8 +57,7 @@ const MainContainer = ({ currentUser }) => {
   // });
 
   return (
-    <div>
-      
+    <div className='main-container'>
       <Route>
         <Route path='/create-post'>
           <PostCreate
