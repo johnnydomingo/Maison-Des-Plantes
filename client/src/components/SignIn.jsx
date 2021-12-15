@@ -23,17 +23,19 @@ const SignIn = (props) => {
       ev.preventDefault();
       handleLogin(formData);
     }}>
-      <h3>Login</h3>
+      <h3 id="login-title">Login</h3>
       <div className="login-form">
         <input
+          id="email-box"
           type='text'
-            name='email'
-            placeholder='email'
+          name='email'
+          placeholder='email'
           value={email}
           onChange={handleChange}
         />
       <br />
         <input
+          id="password-box"
           type='password'
           name='password'
           placeholder='password'
@@ -41,8 +43,8 @@ const SignIn = (props) => {
           onChange={handleChange}
         />
       <br />
-      <button>Login</button>
-      <Link to='/create-account'>Create Account</Link>
+      <button id="confirm-login">Login</button>
+      <Link id="create" to='/create-account'>Create Account</Link>
       </div>
     </form>
   );
