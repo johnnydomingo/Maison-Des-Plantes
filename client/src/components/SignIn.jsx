@@ -8,7 +8,7 @@ const SignIn = ({handleLogin}) => {
     password: '',
   });
   const { email, password } = formData;
-  // const { handleLogin } = props;
+  
 
   const handleChange = (ev) => {
     const { name, value } = ev.target;

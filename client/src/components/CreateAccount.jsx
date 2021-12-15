@@ -10,7 +10,7 @@ const CreateAccount = ({handleRegister}) => {
   });
 
   const { first_name, last_name, email, password } = formData;
-  // const { handleRegister } = props;
+  
 
   const handleChange = (ev) => {
     const { name, value } = ev.target;
