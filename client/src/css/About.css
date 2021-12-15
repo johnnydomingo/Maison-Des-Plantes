@@ -1,4 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
+.who-we-are{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 35px;
+  color: #345c3a;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-top: 21vh;
+  padding-top: 13vh;
+  padding-left: 13vh;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  padding-top: 5vh;
+  margin-bottom: 4vh;
+}
+#happy-quote{
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #648b68;
+  margin-bottom: 2rem;
+}
+#who {
+  display: flex;
+  font-family: 'Spicy Rice', cursive;
+  font-size: 17px;
+  color: #37583c;
+  letter-spacing: 1.5px;
+  border: 2px solid #ddd9ca;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 28vw;
+  margin-bottom: 0.8rem;
+  margin-right: 20rem;
+  text-align: center;
+}
+#aim{
+  font-family: 'Spicy Rice', cursive;
+  font-size: 17px;
+  color: #37583c;
+  letter-spacing: 1.5px;
+  border: 2px solid #ddd9ca;
+  border-radius: 12px;
+  padding: 2.5rem;
+  width: 28vw;
+  margin-left: 20rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
 .the-sill {
-width: 6vh;
-height: 6vh;
+width: 9vh;
+height: 9vh;
+/* margin-bottom: 3rem; */
+}
+.click{
+  font-size: 10px;
+  color: #cac7bb;
+  margin-bottom: 3rem; 
+  margin-right: 0.5rem;
 }
