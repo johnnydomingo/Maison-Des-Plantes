@@ -188,3 +188,20 @@
     max-height: 55vh;
     }
 }
+@media only screen and (max-width: 414px) {
+  .landing-message {
+    text-align: left;
+    padding-top: 18rem;
+    padding-bottom: 8rem;
+    margin-right: 1.5rem;
+    
+  }
+  .home-image img {
+    margin-top: -3rem;
+    margin-right: 5rem;
+    margin-left: 4rem;
+    margin-bottom: 5rem;
+    max-width: 60vw;
+    max-height: 75vh;
+    }
+}
