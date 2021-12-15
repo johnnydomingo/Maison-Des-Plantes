@@ -49,13 +49,6 @@ const MainContainer = ({ currentUser }) => {
     setPosts((prevState) => prevState.filter((post) => post.id !== id));
     history.push('/');
   };
-
-  // posts.sort(function (a, b) {
-  //   let time1 = new Date(a.created_at);
-  //   let time2 = new Date(b.created_at);
-  //   return time2 - time1;
-  // });
-
   return (
     <div className='main-container'>
       <Route>

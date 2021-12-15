@@ -54,9 +54,9 @@ function App() {
           <Route path='/create-account'>
             <Register handleRegister={handleRegister} />
           </Route>
-          <Route path='/'>
+          {/* <Route path='/'> */}
             <MainContainer currentUser={currentUser}/>
-          </Route>
+          {/* </Route> */}
         </Switch>
       </Layout>
     </div>

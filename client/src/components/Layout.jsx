@@ -1,14 +1,15 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import "../css/Footer.css";
+import '../css/Layout.css';
+
 
 const Layout = ({ currentUser, handleLogout, children }) => (
   <div className="layout">
     <Nav currentUser={currentUser} handleLogout={handleLogout} />
-
+    <div className="layout-children">
     {children}
-
-    <Footer />
+    </div>
+    {/* <Footer /> */}
   </div>
 );
 

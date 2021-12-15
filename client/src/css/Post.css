@@ -9,7 +9,6 @@ div{
   align-content: center;
   flex-wrap: nowrap;
   align-items: center;
-  /* background-color: red; */
   margin-left: 5rem;
   margin-right: 5rem;
   padding-top: 12.5rem;
@@ -68,4 +67,42 @@ div{
   margin-top: 0.5rem;
   margin-right: 36.5rem;
   padding-right: 1rem;
+}
+@media only screen and (max-width: 1024px){
+  .post-card{
+    padding-top: 25vh;
+    flex-direction: column;
+    align-items: center;
+  }
+  #author{
+    padding-top: 10rem;
+    margin-bottom: 3rem;
+  }
+  #post-details-image{
+    margin: auto;
+  }
+  #edit-button{
+    margin-top: 3rem;
+  }
+  #delete-button{
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 414px){
+  #post-details-image{
+    width: 55vw;
+    height: 40vh;
+  }
+  #author{
+    padding-left: 3.5rem;
+  }
+  #content{
+    padding: 0;
+  }
+  .edit-buttons{
+    margin-right: 10rem;
+  }
+  #delete-button{
+    margin-right: 2rem;
+  }
 }
