@@ -36,3 +36,50 @@
   color:black;
   margin-bottom: 2rem;
 }
+@media only screen and (max-width: 970px) {
+  .feed {
+    margin-right: 4rem;
+    margin-left: 4rem;
+  }
+  #feed-image {
+    max-width: 35vw;
+    height: 47vh;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #feed-image {
+    max-width: 25vw;
+    height: 37vh;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .feed {
+    display: flex;
+    flex-direction: column;
+  }
+  #feed-image{
+  max-width: 35vw;
+  height: 47vh;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #feed-image{
+    max-width: 40vw;
+    height: 52vh;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #feed-image{
+    max-width: 50vw;
+    height: 42vh;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .feed-title {
+font-size: 22px;
+  }
+  #feed-image{
+    max-width: 55vw;
+    height: 35vh;
+  }
+}

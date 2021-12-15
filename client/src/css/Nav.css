@@ -119,13 +119,13 @@ a {
 @media only screen and (max-width: 570px) {
   
   .maison {
-    font-size: 18px;
+    font-size: 24px;
   }
   .user-link {
     display: none;
   }
   .link{
-    font-size: 9px;
+    font-size: 11px;
   }
   #logout-button {
     font-size: 9px;
