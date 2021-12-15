@@ -9,10 +9,12 @@ const Feed = ({ posts }) => {
     <div className="feed">
       {posts?.map((post) => (
         <div key={post.id}>
+          <div className="hover">
           <Link to={`/posts/${post.id}`}>
             <img id="feed-image" src={post?.image_url} alt="title" />
             <p id="feed-user">{post?.user?.first_name} {post?.user?.last_name}</p>
-          </Link>
+            </Link>
+            </div>
         </div>
       ))}
     </div>
