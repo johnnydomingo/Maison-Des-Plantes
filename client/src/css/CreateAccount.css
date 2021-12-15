@@ -62,3 +62,62 @@ button#confirm-account{
   padding-right: 1rem;
   margin-bottom: 1.2rem;
 }
+@media only screen and (max-width: 1024px){
+  .register-form{
+    padding-bottom: 30vh;
+  }
+  #first-name {
+    width: 28vw;
+    height: 5vh;
+    margin-bottom: 1rem;
+  }
+  #last-name { 
+    width: 28vw;
+    height: 5vh;
+    margin-bottom: 1rem;
+  }
+  #email {
+    width: 28vw;
+    height: 5vh;
+    margin-bottom: 1rem;
+  }
+  #password {
+    width: 28vw;
+    height: 5vh;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 414px){
+  #create-title{
+    font-size: 23px;
+  }
+  .register-form{
+    padding-bottom: 30vh;
+  }
+  #first-name {
+    width: 50vw;
+    height: 3vh;
+    margin-bottom: 1rem;
+  }
+  #last-name { 
+    width: 50vw;
+    height: 3vh;
+    margin-bottom: 1rem;
+  }
+  #email {
+    width: 50vw;
+    height: 3vh;
+    margin-bottom: 1rem;
+  }
+  #password {
+    width: 50vw;
+    height: 3vh;
+    margin-bottom: 1rem;
+  }
+  button#confirm-account{
+    font-size: 18px;
+    width: 8rem;
+    padding-right: 0.5rem;
+    
+  }
+}

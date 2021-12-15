@@ -70,7 +70,10 @@ button#confirm-login{
 @media only screen and (max-width: 414px){
   #login-form{
     padding-top: 25vh;
-    padding-bottom: 29vh;
+    padding-bottom: 35vh;
+  }
+  #login-title{
+    font-size: 23px;
   }
   #email-box {
     width: 50vw;
@@ -81,5 +84,10 @@ button#confirm-login{
     width: 50vw;
     height: 3vh;
     margin-bottom: 2rem;
+  }
+  button#confirm-login{
+    font-size: 18px;
+    width: 8rem;
+    padding-right: 0.5rem;
   }
 }
