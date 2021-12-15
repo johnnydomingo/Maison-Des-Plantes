@@ -80,6 +80,7 @@
 }
 .landing-image{
   border-radius: 15px;
+  border: 0.8px solid #A3C4A7;
   margin-top: 4rem;
   /* margin-bottom: 20rem; */
 }

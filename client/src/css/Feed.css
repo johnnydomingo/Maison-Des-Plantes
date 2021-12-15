@@ -24,6 +24,7 @@
   height: 57vh;
   object-fit: cover;
   border-radius: 15px;
+  border: 0.8px solid #A3C4A7;
   transition: 0.2s ease-in-out;
 }
 #feed-image:hover {

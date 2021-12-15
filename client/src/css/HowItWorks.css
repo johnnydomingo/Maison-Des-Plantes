@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
 
 #section-two{
   margin-bottom: 10rem;
@@ -61,13 +61,13 @@
 }
 .step-1{
   font-size: 26px;
-  font-family: 'Spicy Rice', cursive;
+  font-family: 'Anonymous Pro', monospace;
   padding-right: 10px;
   margin-left: 1.5rem;
 }
 .one{
   font-size: 22px;
-  font-family: 'Spicy Rice', cursive;
+  font-family: 'Anonymous Pro', monospace;
   letter-spacing: 1px;
   /* text-align: center; */
   padding-right: 3rem;
@@ -75,26 +75,26 @@
 }
 .step-2{
   font-size: 26px;
-  font-family: 'Spicy Rice', cursive;
+  font-family: 'Anonymous Pro', monospace;
   padding-right: 10px;
   margin-left: 1.5rem;
 }
 .two{
   font-size: 22px;
-  font-family: 'Spicy Rice', cursive;
+  font-family: 'Anonymous Pro', monospace;
   /* text-align: center; */
   padding-right: 3rem;
   margin-top: 3rem;
 }
 .step-3{
   font-size: 26px;
-  font-family: 'Spicy Rice', cursive;
+  font-family: 'Anonymous Pro', monospace;
   padding-right: 10px;
   margin-left: 1.5rem;
 }
 .three{
   font-size: 22px;
-  font-family: 'Spicy Rice', cursive;
+  font-family: 'Anonymous Pro', monospace;
   /* text-align: center; */
   padding-right: 3rem;
   margin-top: 3rem;
