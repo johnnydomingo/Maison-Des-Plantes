@@ -43,6 +43,16 @@
 #home-link {
   padding-top: 1.2rem;
 }
+.user-link {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: black;
+  display: inline-block;
+  padding-right: 3vw;
+}
+
 .link {
   font-family: 'Anonymous Pro', monospace;
   font-size: 18px;
@@ -74,6 +84,9 @@ a {
   .maison {
     font-size: 30px;
   }
+  .user-link {
+    font-size: 16px;
+  }
   .link{
     font-size: 16px;
   }
@@ -85,4 +98,41 @@ a {
     padding-right: 12.5px;
   }
 }
-
+@media only screen and (max-width: 720px) {
+  .maison {
+    font-size: 25px;
+  }
+  .user-link {
+    font-size: 12px;
+  }
+  .link{
+    font-size: 12px;
+  }
+  #logout-button {
+    font-size: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 9.5px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  
+  .maison {
+    font-size: 18px;
+  }
+  .user-link {
+    display: none;
+  }
+  .link{
+    font-size: 9px;
+  }
+  #logout-button {
+    font-size: 9px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 9px;
+    padding-right: 6.5px;
+    text-align: center;
+  }
+}

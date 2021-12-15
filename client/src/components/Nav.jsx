@@ -16,7 +16,7 @@ const Nav = ({ currentUser, handleLogout }) => {
           {currentUser ? (
             <div>
               <NavLink className='link' id="home-link" to="/create-post">Drop-a-Seed</NavLink>
-              <p className="link">
+              <p className="user-link">
                 Welcome, {currentUser.first_name} {currentUser.last_name}
               </p>
               {/* <NavLink to="/create-post">Drop-a-Seed</NavLink> */}
