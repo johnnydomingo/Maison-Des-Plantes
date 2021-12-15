@@ -37,7 +37,7 @@
   border-radius: 12px;
   box-shadow: 2px 2px 0.4em #44714A;
   margin-right: 2rem;
-  max-width: 25vw;
+  max-width: 22vw;
 }
 .card-two{
   display: flex;
@@ -47,7 +47,7 @@
   border-radius: 12px;
   box-shadow: 2px 2px 0.4em #44714A;
   margin-right: 2rem;
-  max-width: 25vw;
+  max-width: 22vw;
 }
 .card-three{
   display: flex;
@@ -56,7 +56,7 @@
   border: 1px solid black;
   border-radius: 12px;
   box-shadow: 2px 2px 0.4em #44714A;
-  max-width: 25vw;
+  max-width: 22vw;
 }
 .step-1{
   font-size: 26px;
@@ -65,7 +65,7 @@
   margin-left: 1.5rem;
 }
 .one{
-  font-size: 24px;
+  font-size: 22px;
   font-family: 'Spicy Rice', cursive;
   letter-spacing: 1px;
   /* text-align: center; */
@@ -79,7 +79,7 @@
   margin-left: 1.5rem;
 }
 .two{
-  font-size: 24px;
+  font-size: 22px;
   font-family: 'Spicy Rice', cursive;
   /* text-align: center; */
   padding-right: 3rem;
@@ -92,7 +92,7 @@
   margin-left: 1.5rem;
 }
 .three{
-  font-size: 24px;
+  font-size: 22px;
   font-family: 'Spicy Rice', cursive;
   /* text-align: center; */
   padding-right: 3rem;
