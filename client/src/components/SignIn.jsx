@@ -2,13 +2,13 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/SignIn.css'
 
-const SignIn = (props) => {
+const SignIn = ({handleLogin}) => {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
   });
   const { email, password } = formData;
-  const { handleLogin } = props;
+  // const { handleLogin } = props;
 
   const handleChange = (ev) => {
     const { name, value } = ev.target;
@@ -19,7 +19,8 @@ const SignIn = (props) => {
   };
 
   return (
-    <form id="login-form"
+    <div id="login-form">
+    <form 
       onSubmit={(ev) => {
       ev.preventDefault();
       handleLogin(formData);
@@ -48,6 +49,7 @@ const SignIn = (props) => {
       <Link id="create" to='/create-account'>Create Account</Link>
       </div>
     </form>
+    </div>
   );
 }
 

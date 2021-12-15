@@ -1,7 +1,7 @@
 import { useState } from "react";
 import '../css/CreateAccount.css';
 
-const CreateAccount = (props) => {
+const CreateAccount = ({handleRegister}) => {
   const [formData, setFormData] = useState({
     first_name: "",
     last_name: "",
@@ -10,7 +10,7 @@ const CreateAccount = (props) => {
   });
 
   const { first_name, last_name, email, password } = formData;
-  const { handleRegister } = props;
+  // const { handleRegister } = props;
 
   const handleChange = (ev) => {
     const { name, value } = ev.target;

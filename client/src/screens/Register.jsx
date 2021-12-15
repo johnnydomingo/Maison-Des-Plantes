@@ -1,8 +1,10 @@
 import CreateAccount from '../components/CreateAccount';
-const Register = () => {
+const Register = ({handleRegister}) => {
   return (
     <div>
-      <CreateAccount />
+      <CreateAccount
+        handleRegister={handleRegister}
+      />
     </div>
   )
 }
