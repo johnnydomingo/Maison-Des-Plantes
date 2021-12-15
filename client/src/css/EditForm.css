@@ -30,3 +30,21 @@
   padding-right: 1rem;
   margin-bottom: 7.3rem;
 }
+@media only screen and (max-width: 1024px){
+  #content-box{
+    margin-top: 2rem;
+    height: 10vh;
+  }
+}
+@media only screen and (max-width: 414px){
+  #not-happy{
+    font-size: 20px;
+    padding: 1rem;
+  }
+  #content-box{
+    width: 45vw;
+  }
+  #image-box{
+    width: 45vw;
+  }
+}
