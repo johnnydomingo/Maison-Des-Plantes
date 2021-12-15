@@ -107,12 +107,15 @@
     max-height: 50vh;
   }
 }
-@media only screen and (max-width: 1110px){
+@media only screen and (max-width: 1024px){
+  .landing-message{
+    margin-left: 3.5rem;
+  }
   .sub-heading{
-    font-size: 25px;
+    font-size: 28px;
   }
   #share {
-    font-size: 14px;
+    font-size: 18px;
     margin-top: -30px;
   }
   #home-button, button {
@@ -125,6 +128,7 @@
     padding-right: 10px;
   }
   .home-image img {
+    margin-right: 4rem;
     max-width: 30vw;
     max-height: 45vh;
   }
