@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
 .feed {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -5,7 +8,17 @@
   margin-right: 8rem;
   margin-left: 8rem;
 }
-
+.feed-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Bungee Shade';
+  font-size: 35px;
+  margin-bottom: 4rem;
+}
 #feed-image {
   max-width: 45vw;
   height: 57vh;
@@ -16,4 +29,9 @@
 #feed-image:hover {
   transform: scale(1.05);
 }
-
+#feed-user {
+  font-family: 'Anonymous Pro', monospace;
+  font-style: italic;
+  color:black;
+  margin-bottom: 2rem;
+}

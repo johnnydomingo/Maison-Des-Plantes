@@ -4,6 +4,8 @@ import "../css/Feed.css";
 
 const Feed = ({ posts }) => {
   return (
+    <div>
+    <div className="feed-title">View Posts</div>
     <div className="feed">
       {posts?.map((post) => (
         <div key={post.id}>
@@ -16,6 +18,7 @@ const Feed = ({ posts }) => {
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 };
