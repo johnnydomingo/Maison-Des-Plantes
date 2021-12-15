@@ -3,9 +3,10 @@
 
 .register-form{
   background-color: #f5f1e5;
-  margin-top: 16vh;
-  padding-top: 12vh;
-  margin-bottom: 8vh;
+  height: 100%;
+  padding-top: 20vh;
+  padding-bottom: 45vh;
+
 }
 .account-form {
   display: flex;

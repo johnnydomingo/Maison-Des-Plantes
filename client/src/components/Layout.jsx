@@ -1,22 +1,15 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import "../css/Footer.css";
 
+const Layout = ({ currentUser, handleLogout, children }) => (
+  <div className="layout">
+    <Nav currentUser={currentUser} handleLogout={handleLogout} />
 
-const Layout = ({currentUser, handleLogout, children}) => (
-  
-  <div>
-    <div>
-    <Nav
-      currentUser={currentUser}
-      handleLogout={handleLogout}
-    />
-    </div>
-  <div>
-      {children}
-    </div>
+    {children}
+
     <Footer />
-    </div>
-  )
-
+  </div>
+);
 
 export default Layout;

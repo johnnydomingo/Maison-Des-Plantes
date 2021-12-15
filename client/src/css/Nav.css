@@ -10,7 +10,7 @@
   width: 100vw;
   background-color: #f5f1e5;
   top: 0;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   padding-bottom: 1rem;
   border-style: double bottom;
   border-bottom: 3px solid #44714A;
@@ -37,7 +37,7 @@
 }
 .nav-links {
   font-family: 'Anonymous Pro', monospace;
-  margin-top: -4rem;
+  /* margin-top: -4rem; */
   display: inline-flex;
 }
 #home-link {

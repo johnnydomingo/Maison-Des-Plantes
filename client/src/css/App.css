@@ -1,10 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade');
+
 
 body {
   margin: 0;
+  background-color: #f5f1e5;
+  /* height: 100vh; */
 }
-div {
+.App {
+  background-color: #f5f1e5;
+  height: 100vh;
+}
+/* div {
   background-color: #f5f1e5;
   width: 100vw;
   height: 100vh;
-}
+} */

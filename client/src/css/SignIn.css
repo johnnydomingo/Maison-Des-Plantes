@@ -3,9 +3,9 @@
 
 #login-form{
   background-color: #f5f1e5;
-  margin-top: 16vh;
-  padding-top: 12vh;
-  margin-bottom: 22.7vh;
+  height: 100%;
+  padding-top: 20vh;
+  padding-bottom: 45vh;
 }
 .login-form{
   display: flex;
@@ -50,4 +50,36 @@ button#confirm-login{
 #create{
   font-family: 'Anonymous Pro', monospace;
   color: black;
+}
+@media only screen and (max-width: 1024px){
+  #login-form{
+    padding-top: 30vh;
+    padding-bottom: 37vh;
+  }
+  #email-box{
+    width: 20vw;
+    height: 3vh;
+    margin-bottom: 2rem;
+  }
+  #password-box{
+    width: 20vw;
+    height: 3vh;
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 414px){
+  #login-form{
+    padding-top: 25vh;
+    padding-bottom: 29vh;
+  }
+  #email-box {
+    width: 50vw;
+    height: 3vh;
+    margin-bottom: 2rem;
+  }
+  #password-box {
+    width: 50vw;
+    height: 3vh;
+    margin-bottom: 2rem;
+  }
 }
