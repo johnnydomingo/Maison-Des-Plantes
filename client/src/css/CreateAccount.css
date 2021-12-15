@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+.register-form{
+  background-color: #f5f1e5;
+  margin-top: 16vh;
+  padding-top: 12vh;
+  margin-bottom: 13vh;
+}
+.account-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+#create-title{
+  font-family: 'Bungee Shade';
+  font-size: 38px;
+  letter-spacing: 2px;
+  color: #44714A;
+}
+#first-name {
+  background-color: #f5f1e5;
+  border-radius: 5px;
+  border: 3px solid #ddd9ca;
+  width: 15vw;
+  height: 5vh;
+}
+#last-name { 
+  background-color: #f5f1e5;
+  border-radius: 5px;
+  border: 3px solid #ddd9ca;
+  width: 15vw;
+  height: 5vh;
+}
+#email {
+  background-color: #f5f1e5;
+  border-radius: 5px;
+  border: 3px solid #ddd9ca;
+  width: 15vw;
+  height: 5vh;
+}
+#password {
+  background-color: #f5f1e5;
+  border-radius: 5px;
+  border: 3px solid #ddd9ca;
+  width: 15vw;
+  height: 5vh;
+  margin-bottom: 1rem;
+}
+button#confirm-account{
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  color: #A3C4A7;
+  width: 12rem;
+  background-color:#44714A;
+  box-shadow: 6.5px -2.5px 3px 2px #A3C4A7;
+  padding-right: 1rem;
+  margin-bottom: 1.2rem;
+}

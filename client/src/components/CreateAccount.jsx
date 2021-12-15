@@ -1,4 +1,5 @@
 import { useState } from "react";
+import '../css/CreateAccount.css';
 
 const CreateAccount = (props) => {
   const [formData, setFormData] = useState({
@@ -13,8 +14,8 @@ const CreateAccount = (props) => {
 
   const handleChange = (ev) => {
     const { name, value } = ev.target;
-    setFormData((pineapple) => ({
-      ...pineapple,
+    setFormData((prevState) => ({
+      ...prevState,
       [name]: value,
     }));
   };
@@ -65,7 +66,7 @@ const CreateAccount = (props) => {
           onChange={handleChange}
         />
         <br />
-        <button>Create</button>
+        <button id="confirm-account">Create</button>
       </div>
     </form>
   );

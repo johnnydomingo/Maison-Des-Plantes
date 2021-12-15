@@ -39,6 +39,7 @@
 button#confirm-login{
   font-family: 'Anonymous Pro', monospace;
   font-size: 22px;
+  letter-spacing: 1.5px;
   color: #A3C4A7;
   width: 12rem;
   background-color:#44714A;

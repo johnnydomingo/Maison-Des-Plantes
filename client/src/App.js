@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import Layout from './components/Layout';
 import Login from './screens/Login';
+import Register from './screens/Register';
 // import SignIn from './components/SignIn'
 import {
   loginUser,
@@ -10,7 +11,6 @@ import {
   verifyUser,
   removeToken,
 } from './services/auth';
-import Register from './screens/Register';
 import MainContainer from './containers/MainContainer';
 
 function App() {
@@ -51,7 +51,7 @@ function App() {
           <Route path='/login'>
             <Login handleLogin={handleLogin} />
           </Route>
-          <Route path='/register'>
+          <Route path='/create-account'>
             <Register handleRegister={handleRegister} />
           </Route>
           <Route path='/'>

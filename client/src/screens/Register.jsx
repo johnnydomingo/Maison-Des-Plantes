@@ -1,9 +1,8 @@
 import CreateAccount from '../components/CreateAccount';
-
 const Register = () => {
   return (
     <div>
-      <CreateAccount/>
+      <CreateAccount />
     </div>
   )
 }

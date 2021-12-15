@@ -19,7 +19,8 @@ const SignIn = (props) => {
   };
 
   return (
-    <form id="login-form" onSubmit={(ev) => {
+    <form id="login-form"
+      onSubmit={(ev) => {
       ev.preventDefault();
       handleLogin(formData);
     }}>
