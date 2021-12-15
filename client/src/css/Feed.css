@@ -36,14 +36,14 @@
   color:black;
   margin-bottom: 2rem;
 }
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 1024px) {
   .feed {
     margin-right: 4rem;
     margin-left: 4rem;
   }
   #feed-image {
-    max-width: 35vw;
-    height: 47vh;
+    max-width: 42vw;
+    height: 40vh;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -76,10 +76,13 @@
 }
 @media only screen and (max-width: 414px) {
   .feed-title {
-font-size: 22px;
+    font-size: 20px;
   }
   #feed-image{
     max-width: 55vw;
     height: 35vh;
+  }
+  #feed-user{
+    font-size: 10.5px;
   }
 }
