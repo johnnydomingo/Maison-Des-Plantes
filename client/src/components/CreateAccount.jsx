@@ -1,6 +1,7 @@
 import { useState } from "react";
+import '../css/CreateAccount.css';
 
-const CreateAccount = (props) => {
+const CreateAccount = ({handleRegister}) => {
   const [formData, setFormData] = useState({
     first_name: "",
     last_name: "",
@@ -9,64 +10,64 @@ const CreateAccount = (props) => {
   });
 
   const { first_name, last_name, email, password } = formData;
-  const { handleRegister } = props;
+  
 
   const handleChange = (ev) => {
     const { name, value } = ev.target;
-    setFormData((pineapple) => ({
-      ...pineapple,
+    setFormData((prevState) => ({
+      ...prevState,
       [name]: value,
     }));
   };
 
   return (
     <form
+      className="register-form"
       onSubmit={(ev) => {
         ev.preventDefault();
         handleRegister(formData);
       }}
     >
-      <h3>Create Account</h3>
-      <label>
-        first name
+      <h3 id="create-title">Create Account</h3>
+      <div className="account-form">
         <input
+          id="first-name"
           type="text"
           name="first_name"
+          placeholder="first name"
           value={first_name}
           onChange={handleChange}
         />
-      </label>
-      <br />
-      <label>
-        last name
+        <br />
         <input
+          id="last-name"
           type="text"
           name="last_name"
+          placeholder="last name"
           value={last_name}
           onChange={handleChange}
         />
-      </label>
-      <br />
-      <label>
-        email
-        <input type="text"
+        <br />
+        <input
+          id="email"
+          type="text"
           name="email"
+          placeholder="email"
           value={email}
           onChange={handleChange}
         />
-      </label>
-      <br />
-      <label>
-        password
+        <br />
         <input
+          id="password"
           type="password"
           name="password"
+          placeholder="password"
           value={password}
           onChange={handleChange}
         />
-      </label>
-      <br />
-      <button>Create</button>
+        <br />
+        <button id="confirm-account">Create</button>
+      </div>
     </form>
   );
 };

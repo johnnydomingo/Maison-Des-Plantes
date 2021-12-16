@@ -1,9 +1,10 @@
 import SignIn from '../components/SignIn';
-const Login = () => {
+const Login = ({handleLogin}) => {
   return (
     
     <div className='login'>
-      <SignIn />
+      <SignIn
+      handleLogin={handleLogin}/>
     </div>
     
   )

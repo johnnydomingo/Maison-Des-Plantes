@@ -1,6 +1,7 @@
 .Footer {
-  border-top: 3px solid #A3C4A7;
-  background-color: #f5f1e5;
-  padding-bottom:  15px;
+  position: relative;
+  display: inline-block;
   bottom: 0;
+  width: 100%;
+  border-top: 1.5px solid #A3C4A7;
 }

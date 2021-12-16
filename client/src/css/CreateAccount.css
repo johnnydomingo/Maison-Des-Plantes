@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
 
-#login-form{
+.register-form{
   background-color: #f5f1e5;
   height: 100%;
   padding-top: 20vh;
   padding-bottom: 45vh;
+
 }
-.login-form{
+.account-form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -15,20 +16,34 @@
   justify-content: center;
   align-items: center;
 }
-#login-title{
+#create-title{
   font-family: 'Bungee Shade';
   font-size: 38px;
   letter-spacing: 2px;
   color: #44714A;
 }
-#email-box{
+#first-name {
   background-color: #f5f1e5;
   border-radius: 5px;
   border: 3px solid #ddd9ca;
   width: 15vw;
   height: 5vh;
 }
-#password-box{
+#last-name { 
+  background-color: #f5f1e5;
+  border-radius: 5px;
+  border: 3px solid #ddd9ca;
+  width: 15vw;
+  height: 5vh;
+}
+#email {
+  background-color: #f5f1e5;
+  border-radius: 5px;
+  border: 3px solid #ddd9ca;
+  width: 15vw;
+  height: 5vh;
+}
+#password {
   background-color: #f5f1e5;
   border-radius: 5px;
   border: 3px solid #ddd9ca;
@@ -36,7 +51,7 @@
   height: 5vh;
   margin-bottom: 1rem;
 }
-button#confirm-login{
+button#confirm-account{
   font-family: 'Anonymous Pro', monospace;
   font-size: 22px;
   letter-spacing: 1.5px;
@@ -47,47 +62,62 @@ button#confirm-login{
   padding-right: 1rem;
   margin-bottom: 1.2rem;
 }
-#create{
-  font-family: 'Anonymous Pro', monospace;
-  color: black;
-}
 @media only screen and (max-width: 1024px){
-  #login-form{
-    padding-top: 30vh;
-    padding-bottom: 37vh;
+  .register-form{
+    padding-bottom: 30vh;
   }
-  #email-box{
-    width: 20vw;
-    height: 3vh;
-    margin-bottom: 2rem;
+  #first-name {
+    width: 28vw;
+    height: 5vh;
+    margin-bottom: 1rem;
   }
-  #password-box{
-    width: 20vw;
-    height: 3vh;
-    margin-bottom: 2rem;
+  #last-name { 
+    width: 28vw;
+    height: 5vh;
+    margin-bottom: 1rem;
+  }
+  #email {
+    width: 28vw;
+    height: 5vh;
+    margin-bottom: 1rem;
+  }
+  #password {
+    width: 28vw;
+    height: 5vh;
+    margin-bottom: 1rem;
   }
 }
 @media only screen and (max-width: 414px){
-  #login-form{
-    padding-top: 25vh;
-    padding-bottom: 35vh;
-  }
-  #login-title{
+  #create-title{
     font-size: 23px;
   }
-  #email-box {
+  .register-form{
+    padding-bottom: 30vh;
+  }
+  #first-name {
     width: 50vw;
     height: 3vh;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
-  #password-box {
+  #last-name { 
     width: 50vw;
     height: 3vh;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
-  button#confirm-login{
+  #email {
+    width: 50vw;
+    height: 3vh;
+    margin-bottom: 1rem;
+  }
+  #password {
+    width: 50vw;
+    height: 3vh;
+    margin-bottom: 1rem;
+  }
+  button#confirm-account{
     font-size: 18px;
     width: 8rem;
     padding-right: 0.5rem;
+    
   }
 }
