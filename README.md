@@ -88,17 +88,19 @@ src
       |__ Nav.jsx
       |__ Footer.jsx   
       |__ Feed.jsx
-      |__ Register.jsx
       |__ SignIn.jsx
-      |__ PostCard.jsx
-      |__ PostEdit.jsx
-      |__ PostCreate.jsx
-|__ screens/
-      |__ LandingPage.jsx
-      |__ PostDetails.jsx
+      |__ Post.jsx
+      |__ EditForm.jsx
       |__ PostCreate.jsx
       |__ HowItWorks.jsx
+      |__ Layout.jsx
+|__ screens/
+      |__ Home.jsx
+      |__ PostDetails.jsx
+      |__ DropASeed.jsx
       |__ About.jsx
+      |__ Register.jsx
+      |__ Login.jsx
 |__ services/
       |__ apiConfig.jsx
 
@@ -112,13 +114,13 @@ src
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Wireframes          |    H     |     3 hrs      |     6 hrs     |    6 hrs    |
 | Component Tree      |    H     |     1 hr       |     1 hrs     |    1 hr     |
-| Component Arch.     |    H     |     1 hr       |     1 hr      |     TBD     |
-| Build Back End      |    H     |     8 hrs      |      TBD      |     TBD     |
-| Build Front End     |    H     |     8 hrs      |      TBD      |     TBD     |
-| Create Components   |    H     |     10 hrs     |      TBD      |     TBD     |
-| Style Front End     |    H     |     10 hrs     |      TBD      |     TBD     |
-| Debugging           |    H     |     5 hrs      |      TBD      |     TBD     |
-| TOTAL               |          |     46 hrs     |     8 hrs     |     TBD     |
+| Component Arch.     |    H     |     1 hr       |     1 hr      |    1 hr     |
+| Build Back End      |    H     |     8 hrs      |     4 hrs     |    4 hrs    |
+| Build Front End     |    H     |     8 hrs      |    10 hrs     |   10 hrs    |
+| Create Components   |    H     |     10 hrs     |     8 hrs     |    8 hrs    |
+| Style Front End     |    H     |     10 hrs     |    15 hrs     |   15 hrs    |
+| Debugging           |    H     |     5 hrs      |     6 hrs     |    6 hrs    |
+| TOTAL               |          |     46 hrs     |     8 hrs     |   51 hrs    |
 
 > _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
@@ -142,8 +144,22 @@ Future work on this application will consist on more refined CSS that will eleva
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+```
+.feed {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  margin-right: 8rem;
+  margin-left: 8rem;
+}
+@media only screen and (max-width: 750px) {
+  .feed {
+    display: flex;
+    flex-direction: column;
+  }
+```
+After 3 long months of being in General Assembly's Software Engineering Bootcamp, I finally understand how to use the grid and flex CSS properties. I was able to styling the component with grid and then switch to a flexbox in a media query almost effortlessly. I am pretty proud of this as CSS has always been a difficult concept to grasp.
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+I was having errors with my authentication in my front end: my handleLogin and handleRegister functions were not being recognized. I was passing these functions in as props and that's where the error is. Instead of passing the functions as props, I deconstructed the functions and passed them in as themselves and voila, error was cleared.
