@@ -12,9 +12,6 @@ const HowItWorks = () => {
           Dropping a Seed is as easy as counting to three!
         </h3>
       </div>
-      {/* <div className="monstera">
-        <img src={account} id="leaf" alt="leaf"/>
-      </div> */}
       <div id="post-instructions">
         <div className="card-one">
           <h3 className="step-1">1.</h3>

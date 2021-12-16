@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
 
 #section-two{
   margin-bottom: 10rem;
@@ -6,7 +6,8 @@
 #post-instructions{
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-right: 2rem;
   padding-left: 2rem;
 }
@@ -16,27 +17,27 @@
   align-content: center;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 26px;
-  font-family: 'Spicy Rice', cursive;
-  letter-spacing: 2px;
-  margin-bottom: 3rem;
-  /* position: absolute; */
+  font-size: 28px;
+  font-family: 'Bungee Shade';
+  letter-spacing: 2.5px;
+  margin-bottom: 2rem;
+  
 }
 #leaf {
-  width: 20vh;
-  height: 20vh;
-  margin-bottom: 6rem;
+  width: 11vw;
+  height: 17vh;
+  margin-bottom: 3rem;
 }
 .card-one{
   display: flex;
   flex-direction: row;
   margin-top: 4rem;
-  /* background-color: #f5f1e5; */
   border: 1px solid black;
   border-radius: 12px;
   box-shadow: 2px 2px 0.4em #44714A;
   margin-right: 2rem;
-  max-width: 30vw;
+  max-width: 22vw;
+  
 }
 .card-two{
   display: flex;
@@ -46,7 +47,7 @@
   border-radius: 12px;
   box-shadow: 2px 2px 0.4em #44714A;
   margin-right: 2rem;
-  max-width: 30vw;
+  max-width: 22vw;
 }
 .card-three{
   display: flex;
@@ -55,45 +56,245 @@
   border: 1px solid black;
   border-radius: 12px;
   box-shadow: 2px 2px 0.4em #44714A;
-  max-width: 30vw;
+  max-width: 22vw;
 }
 .step-1{
   font-size: 26px;
-  font-family: 'Spicy Rice', cursive;
+  font-family: 'Anonymous Pro', monospace;
   padding-right: 10px;
   margin-left: 1.5rem;
 }
 .one{
-  font-size: 26px;
-  font-family: 'Spicy Rice', cursive;
+  font-size: 22px;
+  font-family: 'Anonymous Pro', monospace;
   letter-spacing: 1px;
-  /* text-align: center; */
   padding-right: 3rem;
   margin-top: 3rem;
 }
 .step-2{
   font-size: 26px;
-  font-family: 'Spicy Rice', cursive;
+  font-family: 'Anonymous Pro', monospace;
   padding-right: 10px;
   margin-left: 1.5rem;
 }
 .two{
-  font-size: 26px;
-  font-family: 'Spicy Rice', cursive;
-  /* text-align: center; */
+  font-size: 22px;
+  font-family: 'Anonymous Pro', monospace;
   padding-right: 3rem;
   margin-top: 3rem;
 }
 .step-3{
   font-size: 26px;
-  font-family: 'Spicy Rice', cursive;
+  font-family: 'Anonymous Pro', monospace;
   padding-right: 10px;
   margin-left: 1.5rem;
 }
 .three{
-  font-size: 26px;
-  font-family: 'Spicy Rice', cursive;
-  /* text-align: center; */
+  font-size: 22px;
+  font-family: 'Anonymous Pro', monospace;
   padding-right: 3rem;
   margin-top: 3rem;
+}
+@media only screen and (max-width: 1024px) {
+.instructions{
+  font-size: 25px;
+}
+#leaf {
+  width: 16vw;
+  height: 12vh;
+}
+.card-one{
+  max-width: 22vw;
+  max-height: 40vh;
+}
+.one {
+  font-size: 18px;
+}
+.step-1{
+  font-size: 18px;
+}
+.card-two{
+  max-width: 22vw;
+  max-height: 40vh;
+}
+.two {
+  font-size: 18px;
+}.step-2{
+  font-size: 18px;
+}
+.card-three{
+  max-width: 22vw;
+  max-height: 40vh;
+}
+.three {
+  font-size: 18px;
+}.step-3{
+  font-size: 18px;
+}
+}
+@media only screen and (max-width: 951px) {
+  #leaf{
+    width: 12vw;
+    height: 12vh;
+  }
+  .instructions {
+    font-size: 20px;
+  }
+  @media only screen and (max-width: 860px) {
+    #post-instructions{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding-left: 4rem;
+      justify-content: center;
+      align-content: center;
+    }
+    .card-one{
+      max-width: 30vw;
+      max-height: 40vh;
+    }
+    .one {
+      font-size: 18px;
+    }
+    .step-1{
+      font-size: 18px;
+    }
+    .card-two{
+      max-width: 30vw;
+      max-height: 40vh;
+    }
+    .two {
+      font-size: 18px;
+    }
+    .step-2{
+      font-size: 18px;
+    }
+    .card-three{
+      max-width: 30vw;
+      max-height: 40vh;
+    }
+    .three {
+      font-size: 18px;
+    }.step-3{
+      font-size: 18px;
+    }
+  }
+  @media only screen and (max-width: 753px){
+    #leaf {
+      margin-top: 5rem;
+    }
+  }
+  @media only screen and (max-width: 640px){
+    .instructions{
+      font-size: 17px;
+    }
+    .card-one{
+      max-width: 30vw;
+      max-height: 40vh;
+    }
+    .one {
+      font-size: 15px;
+    }
+    .step-1{
+      font-size: 15px;
+    }
+    .card-two{
+      max-width: 30vw;
+      max-height: 40vh;
+    }
+    .two {
+      font-size: 15px;
+    }
+    .step-2{
+      font-size: 15px;
+    }
+    .card-three{
+      max-width: 30vw;
+      max-height: 40vh;
+    }
+    .three {
+      font-size: 15px;
+    }.step-3{
+      font-size: 15px;
+    }
+  }
+  @media only screen and (max-width: 571px){
+    #leaf {
+      margin-top: -4rem;
+      width: 14vw;
+      height:11vh;
+    }
+    .instructions{
+      font-size: 15px;
+    }
+    .card-one{
+      max-width: 40vw;
+      max-height: 35vh;
+    }
+    .one {
+      font-size: 15px;
+    }
+    .step-1{
+      font-size: 15px;
+    }
+    .card-two{
+      max-width: 40vw;
+      max-height: 35vh;
+    }
+    .two {
+      font-size: 15px;
+    }
+    .step-2{
+      font-size: 15px;
+    }
+    .card-three{
+      max-width: 40vw;
+      max-height: 35vh;
+    }
+    .three {
+      font-size: 15px;
+    }.step-3{
+      font-size: 15px;
+    }
+  }
+  @media only screen and (max-width: 414px){
+    #leaf {
+      margin-top: -4rem;
+      width: 18vw;
+      height:11vh;
+    }
+    .instructions{
+      font-size: 15px;
+    }
+    .card-one{
+      max-width: 45vw;
+      max-height: 35vh;
+    }
+    .one {
+      font-size: 15px;
+    }
+    .step-1{
+      font-size: 15px;
+    }
+    .card-two{
+      max-width: 45vw;
+      max-height: 35vh;
+    }
+    .two {
+      font-size: 15px;
+    }
+    .step-2{
+      font-size: 15px;
+    }
+    .card-three{
+      max-width: 45vw;
+      max-height: 35vh;
+    }
+    .three {
+      font-size: 15px;
+    }
+    .step-3{
+      font-size: 15px;
+    }
+  }
 }

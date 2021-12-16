@@ -1,16 +1,15 @@
 import Post from '../components/Post';
-import PostCard from '../components/PostCard'
+
+
 
 
 const PostDetails = ({ currentUser, handlePostDelete}) => {
   return (
-    <div>
-      {/* <PostCard /> */}
+    <div className="post-details">
       <Post
         currentUser={currentUser}
         handlePostDelete={handlePostDelete}
       />
-      
     </div>
   )
 }

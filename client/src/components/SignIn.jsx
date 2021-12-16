@@ -2,13 +2,13 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/SignIn.css'
 
-const SignIn = (props) => {
+const SignIn = ({handleLogin}) => {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
   });
   const { email, password } = formData;
-  const { handleLogin } = props;
+  
 
   const handleChange = (ev) => {
     const { name, value } = ev.target;
@@ -19,34 +19,37 @@ const SignIn = (props) => {
   };
 
   return (
-    <form id="login-form" onSubmit={(ev) => {
+    <div id="login-form">
+    <form 
+      onSubmit={(ev) => {
       ev.preventDefault();
       handleLogin(formData);
     }}>
-      <h3>Login</h3>
-      <label>
-        email
+      <h3 id="login-title">Login</h3>
+      <div className="login-form">
         <input
+          id="email-box"
           type='text'
           name='email'
+          placeholder='email'
           value={email}
           onChange={handleChange}
         />
-      </label>
       <br />
-      <label>
-        password
         <input
+          id="password-box"
           type='password'
           name='password'
+          placeholder='password'
           value={password}
           onChange={handleChange}
         />
-      </label>
       <br />
-      <button>Login</button>
-      <Link to='/create-account'>Create Account</Link>
+      <button id="confirm-login">Login</button>
+      <Link id="create" to='/create-account'>Create Account</Link>
+      </div>
     </form>
+    </div>
   );
 }
 

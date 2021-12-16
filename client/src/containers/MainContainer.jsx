@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Route, useHistory } from 'react-router-dom';
+import '../css/MainContainer.css';
 import PostCreate from '../components/PostCreate.jsx';
 import EditForm from '../components/EditForm';
 import Home from '../screens/Home';
@@ -12,11 +13,12 @@ import { getAllPosts, postPost, putPost, deletePost } from '../services/post';
 const MainContainer = ({ currentUser }) => {
   const [posts, setPosts] = useState([]);
   const history = useHistory();
+  
 
   useEffect(() => {
     const fetchPosts = async () => {
       const postList = await getAllPosts();
-      const sortPosts=postList.sort(function (a, b) {
+      const sortPosts = postList.sort(function (a, b) {
         let time1 = new Date(a.created_at);
         let time2 = new Date(b.created_at);
         return time2 - time1;
@@ -47,41 +49,30 @@ const MainContainer = ({ currentUser }) => {
     setPosts((prevState) => prevState.filter((post) => post.id !== id));
     history.push('/');
   };
-
-  // posts.sort(function (a, b) {
-  //   let time1 = new Date(a.created_at);
-  //   let time2 = new Date(b.created_at);
-  //   return time2 - time1;
-  // });
-
   return (
-    <div>
-      
+    <div className='main-container'>
       <Route>
-        <Route path='/posts/:id/edit'>
-          <EditForm
-            posts={posts}
-            handlePostUpdate={handlePostUpdate}
-            currentUser={currentUser}
-          />
-        </Route>
         <Route path='/create-post'>
           <PostCreate
             handlePostCreate={handlePostCreate}
-            
           /> 
         </Route>
         <Route path='/posts/:id'>
           <PostDetail currentUser={currentUser}
             handlePostDelete={handlePostDelete}
           />
+          <Route path='/posts/:id/edit'>
+            <EditForm
+              currentUser={currentUser}
+              handlePostUpdate={handlePostUpdate}
+            />
+          </Route>
         </Route>
         <Route exact path='/'>
           <Home
             posts={posts}
             handlePostDelete={handlePostDelete}
             currentUser={currentUser}
-            
           />
         </Route>
         <Route path='/about'>
