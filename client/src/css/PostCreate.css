@@ -37,3 +37,25 @@
   padding-right: 1rem;
   margin-bottom: 2.5rem;
 }
+@media only screen and (max-width: 1024px){
+  #caption{
+    width: 50vw;
+    height: 12vh;
+  }
+  #post-picture{
+    width: 40vw;
+    height: 5vh;
+  }
+}
+@media only screen and (max-width: 414px){
+  #seed{
+    font-size: 22px;
+  }
+  #caption{
+    width: 55vw;
+    height: 8vh;
+  }
+  #post-picture {
+    width: 55vw;
+  }
+}

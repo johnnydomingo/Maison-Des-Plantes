@@ -21,18 +21,17 @@
   font-family: 'Bungee Shade';
   letter-spacing: 2.5px;
   margin-bottom: 2rem;
-  /* position: absolute; */
+  
 }
 #leaf {
   width: 11vw;
-  height: 15vh;
+  height: 17vh;
   margin-bottom: 3rem;
 }
 .card-one{
   display: flex;
   flex-direction: row;
   margin-top: 4rem;
-  /* background-color: #f5f1e5; */
   border: 1px solid black;
   border-radius: 12px;
   box-shadow: 2px 2px 0.4em #44714A;

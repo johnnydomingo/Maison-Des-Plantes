@@ -69,7 +69,7 @@ height: 9vh;
 .click{
   font-size: 10px;
   color: #cac7bb;
-  margin-bottom: 3rem; 
+  padding-bottom: 3rem; 
   margin-right: 0.5rem;
 }
 @media only screen and (max-width: 1024px){
@@ -77,12 +77,31 @@ height: 9vh;
     padding-top: 20vh;
   }
   .the-sill{
-    padding-top: 2rem;
+    padding-top: 5rem;
   }
   .click{
     margin-bottom: 0;
   }
 }
-@media only screen and (max-width: 412px){
-  
+@media only screen and (max-width: 414px){
+  #happy-quote{
+    font-size: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    letter-spacing: 2.5px;
+  }
+  #who{
+    margin-left: 11rem;
+    font-size: 15px;
+    width: 35vw;
+
+  }
+  #aim{
+    margin-right: 11rem;
+    font-size: 15px;
+    width: 35vw;
+  }
+  .click{
+    padding-bottom: 2rem;
+  }
 }

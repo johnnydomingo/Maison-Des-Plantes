@@ -43,7 +43,7 @@
   }
   #feed-image {
     max-width: 42vw;
-    height: 40vh;
+    height: 36vh;
   }
 }
 @media only screen and (max-width: 800px) {

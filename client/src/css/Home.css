@@ -25,7 +25,6 @@
 #share{
   font-family: 'Anonymous Pro', monospace;
   font-size: 22px;
-  /* color: black; */
   letter-spacing: 0.5px;
   margin-top: -45px;
 }
@@ -115,7 +114,7 @@
     font-size: 28px;
   }
   #share {
-    font-size: 18px;
+    font-size: 16.5px;
     margin-top: -30px;
   }
   #home-button, button {
@@ -129,8 +128,11 @@
   }
   .home-image img {
     margin-right: 4rem;
-    max-width: 30vw;
-    max-height: 45vh;
+    max-width: 39vw;
+    max-height: 33vh;
+  }
+  .landing-image{
+    margin-top: -3rem;
   }
 }
 @media only screen and (max-width: 950px) {
