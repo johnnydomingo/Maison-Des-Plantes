@@ -19,7 +19,6 @@ const Nav = ({ currentUser, handleLogout }) => {
               <p className="user-link">
                 Welcome, {currentUser.first_name} {currentUser.last_name}
               </p>
-              {/* <NavLink to="/create-post">Drop-a-Seed</NavLink> */}
               <button id="logout-button" onClick={handleLogout}>Logout</button>
             </div>
           ) : (
@@ -27,9 +26,7 @@ const Nav = ({ currentUser, handleLogout }) => {
           )}
         </div>     
         </header>
-        {/* <hr></hr> */}
       </div>
-      {/* <hr></hr> */}
     </div>
   );
 };

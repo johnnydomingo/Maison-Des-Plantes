@@ -10,22 +10,13 @@
   width: 100vw;
   background-color: #f5f1e5;
   top: 0;
-  /* margin-bottom: 2rem; */
   padding-bottom: 1rem;
   border-style: double bottom;
   border-bottom: 3px solid #44714A;
 }
 .maison {
-  /* display: flex;
-  flex-direction: start;
-  padding-left: 5vw;
-  font-family: 'Bungee Shade';
-  font-size: 40px;
-  text-decoration: none;
-  color: #A3C4A7; */
   display: flex;
   flex-direction: row;
-  /* padding-left: 5vw; */
   font-family: 'Bungee Shade';
   font-size: 43px;
   text-decoration: none;
@@ -37,7 +28,6 @@
 }
 .nav-links {
   font-family: 'Anonymous Pro', monospace;
-  /* margin-top: -4rem; */
   display: inline-flex;
 }
 #home-link {
