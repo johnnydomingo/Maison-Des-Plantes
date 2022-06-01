@@ -13,6 +13,7 @@
   padding-bottom: 1rem;
   border-style: double bottom;
   border-bottom: 3px solid #44714A;
+  z-index: 10;
 }
 .maison {
   display: flex;

@@ -18,12 +18,18 @@
   justify-content: center;
   align-items: center;
 }
+
 #caption {
   background-color: #f5f1e5;
   border-radius: 12px;
   width: 35vw;
   height: 18vh;
   margin-bottom: 2rem;
+}
+#caption::placeholder{
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 18px;
 }
 
 #post-picture{
@@ -32,6 +38,11 @@
   width: 25vw;
   height: 5vh;
   margin-bottom: 2rem;
+}
+#post-picture::placeholder{
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 18px;
 }
 #publish{
   padding-right: 1rem;
