@@ -20,7 +20,7 @@
   margin-bottom: 4rem;
 }
 #feed-image {
-  max-width: 45vw;
+  max-width: 100;
   height: 57vh;
   object-fit: cover;
   border-radius: 15px;
@@ -29,6 +29,7 @@
 }
 #feed-image:hover {
   transform: scale(1.05);
+ 
 }
 #feed-user {
   font-family: 'Anonymous Pro', monospace;
@@ -42,13 +43,13 @@
     margin-left: 4rem;
   }
   #feed-image {
-    max-width: 42vw;
+    max-width: 100;
     height: 36vh;
   }
 }
 @media only screen and (max-width: 800px) {
   #feed-image {
-    max-width: 25vw;
+    max-width: 100;
     height: 37vh;
   }
 }
@@ -58,19 +59,19 @@
     flex-direction: column;
   }
   #feed-image{
-  max-width: 35vw;
+  max-width: 100;
   height: 47vh;
   }
 }
 @media only screen and (max-width: 650px) {
   #feed-image{
-    max-width: 40vw;
+    max-width: 100;
     height: 52vh;
   }
 }
 @media only screen and (max-width: 500px) {
   #feed-image{
-    max-width: 50vw;
+    max-width: 100;
     height: 42vh;
   }
 }
@@ -79,10 +80,11 @@
     font-size: 20px;
   }
   #feed-image{
-    max-width: 55vw;
+    min-width: 100;
     height: 35vh;
   }
   #feed-user{
     font-size: 10.5px;
   }
 }
+@media only screen 
